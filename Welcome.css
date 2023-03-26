@@ -26,7 +26,11 @@
 }
 
 .OR {
-    background: -webkit-linear-gradient(45deg, rgba(242,55,55,1) 0%,rgba(100,57,242,1));
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(255, 0, 212)  0%,
+        rgb(235, 84, 84)
+    );
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -34,11 +38,14 @@
     font-size: 30px;
     font-weight: 400;
     margin-top: 15px;
+    font-weight: bold;
 }
 
 .choose {
     background: -webkit-linear-gradient(
-        45deg, rgba(100,57,242,1) 0%, rgba(242,55,55,1)
+        45deg,
+        rgb(235, 84, 84) 0%,
+        rgb(255, 0, 212)
     );
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -46,14 +53,14 @@
     text-align: center;
     font-size: 40px;
     margin-top: 10px;
+    font-weight: bolder;
 }
 
 #welcome {
     background: -webkit-linear-gradient(
-        92.88deg,
-        #455eb5 9.16%,
-        #5643cc 43.89%,
-        #673fd7 64.72%
+        45deg,
+        rgba(100, 57, 242, 1) 0%,
+        rgba(242, 55, 55, 1) 100%
     );
     background-clip: border-box;
     -webkit-background-clip: text;
