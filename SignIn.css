@@ -200,14 +200,13 @@ label {
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans";
     font-weight: 630;
     font-size: 20px;
-    
 }
 
 .reg:hover {
     position: relative;
     border-bottom: 2px solid;
     border-image: linear-gradient(
-       45deg,
+        45deg,
         rgb(209, 54, 27) 0%,
         rgb(231, 101, 101) 100%
     );
