@@ -1,5 +1,5 @@
 #bgSignIN-UP {
-    background-image: url("img/bgSignIN-UP.jpg");
+    background-image: url("img/idk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11,22 +11,20 @@
 
 .border {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 50px;
     border: none;
     border-color: #fff;
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 480px;
-    width: 700px;
+    background-color: rgba(255, 255, 255, 0.568);
+    height: 700px;
+    width: 640px;
     padding: 20px 50px;
     box-shadow: 0px 0px 20px 20px rgba(173, 216, 230, 0.205);
+    margin-right: 70px;
+    border-radius: 20px;
 }
 
 #signIn {
-    background: -webkit-linear-gradient(
-        45deg,
-        rgb(111, 85, 196) 0%,
-        rgb(245, 37, 99) 100%
-    );
+    background: -webkit-linear-gradient(45deg, #803281, #0771b3);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -36,7 +34,7 @@
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .inputbox {
     position: relative;
@@ -74,27 +72,19 @@ input:valid ~ label {
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: rgba(236, 143, 174, 0.973);
+    color: #806fa6;
 }
 .inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color: #f2007b;
+    color: #0a67a1;
     font-size: 1.2em;
     top: 20px;
 }
 
 .gradientColor,
 label {
-    background: -webkit-linear-gradient(
-        92.88deg,
-        #72003e 9.16%,
-        #f2007b 43.89%,
-        #af0163 64.72%
-    );
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0a67a1;
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
@@ -211,4 +201,82 @@ label {
         rgb(231, 101, 101) 100%
     );
     border-image-slice: 9;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+.container-login100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrap-login100-form-btn {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+
+.login100-form-bgbtn {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(
+        right,
+        #00dbde,
+        #fc00ff,
+        #00dbde,
+        #fc00ff
+    );
+    background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    top: 0;
+    left: -100%;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+    left: 0;
 }

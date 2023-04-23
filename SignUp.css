@@ -1,5 +1,5 @@
 #bgSignIN-UP {
-    background-image: url("img/bgSignIN-UP.jpg");
+    background-image: url("img/idk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11,22 +11,20 @@
 
 .border {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 50px;
     border: none;
     border-color: #fff;
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 600px;
-    width: 700px;
+    background-color: rgba(255, 255, 255, 0.568);
+    height: 700px;
+    width: 640px;
     padding: 20px 50px;
     box-shadow: 0px 0px 20px 20px rgba(173, 216, 230, 0.205);
+    margin-right: 70px;
+    border-radius: 20px;
 }
 
-#signIn {
-    background: -webkit-linear-gradient(
-        45deg,
-        rgb(111, 85, 196) 0%,
-        rgb(245, 37, 99) 100%
-    );
+#signUp {
+    background: -webkit-linear-gradient(45deg, #803281, #0771b3);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -36,11 +34,12 @@
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .inputbox {
     position: relative;
-    margin: 30px auto;
+    margin: 40px auto;
     width: 450px;
     border-bottom: 2px solid;
     border-image: linear-gradient(
@@ -74,27 +73,20 @@ input:valid ~ label {
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: rgba(236, 143, 174, 0.973);
+    color: #d82c57;
+    font-weight: bold;
 }
 .inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color: #f2007b;
+    color: #af01af;
     font-size: 1.2em;
     top: 20px;
 }
 
 .gradientColor,
 label {
-    background: -webkit-linear-gradient(
-        92.88deg,
-        #72003e 9.16%,
-        #f2007b 43.89%,
-        #af0163 64.72%
-    );
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0a67a1;
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
@@ -211,4 +203,7 @@ label {
         rgb(231, 101, 101) 100%
     );
     border-image-slice: 9;
+}
+::-ms-reveal {
+    display: none;
 }
