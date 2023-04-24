@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -46,24 +46,24 @@ body {
 }
 
 .border.active .formbox-log{
-    transition: none;
+    transition: transform .18s ease;
     transform: translateX(-800px);    
 }
 
 .border .formbox-log{
-    transition: transform .18s ease;
+    transition: transform .30s ease;
     transform: translateX(0);
 } 
 
 .border .formbox-reg{
-    position: absolute;
+    position: relative;
     transform: translateX(800px);
     margin-top:-589px;
-    transition: none;
+    transition: transform .18s ease;
 }
 
 .border.active .formbox-reg{
-    transition: transform .18s ease;
+    transition: transform .30s ease;
     transform: translateX(0);
 }
 
@@ -311,10 +311,7 @@ label {
     font-weight: 630;
     font-size: 20px;
 }
-.formbox-reg
-{
-    margin-left: 100px;
-}
+
 .reg:hover {
     position: relative;
     border-bottom: 2px solid;
