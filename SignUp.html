@@ -13,46 +13,64 @@
         <title>Sign up</title>
     </head>
 
-    <body id="bgSignIN-UP">
-        <div class="borderContainer">
-            <div class="border">
-                <div id="signUp">Sign up</div>
-                <form action="#">
-                    <div class="inputbox">
-                        <input id="mail" type="mail" required />
-                        <label for="">Email</label>
-                        <ion-icon name="mail-outline"></ion-icon>
+    <body>
+        <header>
+            <img class="logo" src="img/logo3.JPG" alt="logo" />
+            <nav>
+                <ul class="navlinks">
+                    <li><a class="navitem" href="#">Home</a></li>
+                    <li><a class="navitem" href="#">Blog</a></li>
+                    <li><a class="navitem" href="#">Services</a></li>
+                    <li><a class="navitem" href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="bgSignIN-UP">
+            <div class="borderContainer">
+                <div class="border">
+                    <div id="signUp">Sign up</div>
+                    <form action="#">
+                        <div class="inputbox">
+                            <input id="mail" type="mail" required />
+                            <label for="">Email</label>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="inputbox">
+                            <input id="num" type="tel" required />
+                            <label for="">Phone Number</label>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="inputbox">
+                            <input id="pwd" type="password" required />
+                            <label for="">Password</label>
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                        <div class="inputbox">
+                            <input id="cpwd" type="password" required />
+                            <label for="">Confirm password</label>
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                    </form>
+                    <div class="buttonContainer">
+                        <a href=""
+                            ><button
+                                onclick="passwordmatch()"
+                                class="CreateButton"
+                            >
+                                Create Account
+                            </button></a
+                        >
+                        <div class="Orsocials">Or sign in using:</div>
+                        <a href="#" class="fa fa-facebook fa-lg"></a>
+                        <a href="#" class="fa fa-twitter fa-lg"></a>
+                        <a href="#" class="fa fa-google fa-lg"></a>
                     </div>
-                    <div class="inputbox">
-                        <input id="num" type="tel" required />
-                        <label for="">Phone Number</label>
-                        <ion-icon name="call-outline"></ion-icon>
+                    <div class="NoAccount">
+                        <p>Already have an account ?</p>
                     </div>
-                    <div class="inputbox">
-                        <input id="pwd" type="password" required />
-                        <label for="">Password</label>
-                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    <div id="regLink">
+                        <a class="reg" href="./SignnIn.html">Log in Here</a>
                     </div>
-                    <div class="inputbox">
-                        <input id="cpwd" type="password" required />
-                        <label for="">Confirm password</label>
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                    </div>
-                </form>
-                <div class="buttonContainer">
-                    <a href=""
-                        ><button onclick="passwordmatch()" class="CreateButton">
-                            Create Account
-                        </button></a
-                    >
-                    <div class="Orsocials">Or sign in using:</div>
-                    <a href="#" class="fa fa-facebook fa-lg"></a>
-                    <a href="#" class="fa fa-twitter fa-lg"></a>
-                    <a href="#" class="fa fa-google fa-lg"></a>
-                </div>
-                <div class="NoAccount"><p>Already have an account ?</p></div>
-                <div id="regLink">
-                    <a class="reg" href="./SignnIn.html">Log in Here</a>
                 </div>
             </div>
         </div>

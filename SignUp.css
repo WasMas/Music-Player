@@ -1,7 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 #bgSignIN-UP {
     background-image: url("img/idk.jpg");
+    height: 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
 .borderContainer {
@@ -38,7 +52,7 @@
     margin-bottom: 30px;
 }
 
-.Orsocials{
+.Orsocials {
     background: -webkit-linear-gradient(45deg, #803281, #0771b3);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -49,7 +63,7 @@
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-        font-weight: bold;
+    font-weight: bold;
 }
 
 .inputbox {
@@ -158,7 +172,7 @@ label {
     -webkit-user-select: none;
     touch-action: manipulation;
     position: relative;
-    width:340px;
+    width: 340px;
     background-size: 200% auto;
 }
 
@@ -231,23 +245,84 @@ label {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
     color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
+}
+
+.fa-twitter {
+    background: #55acee;
     color: white;
-  }
-  
-  .fa-google {
+}
+
+.fa-google {
     background: #dd4b39;
     color: white;
+}
+
+li,
+.navitem,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(212, 219, 219);
+    text-decoration: none;
+    position: relative;
+    background-color: #2b2c2e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100%;
+    background-color: #2b2c2e;
+    height: 40px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navitem:after {
+    content: "";
+    position: absolute;
+    background-color: #a07699;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navitem:hover:after {
+    width: 100%;
+}
+
+.navlinks li .navitem:hover {
+    color: rgb(207, 136, 186);
+}
+
+.buttonContainer {
+    text-align: center;
 }
