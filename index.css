@@ -2,13 +2,17 @@
 
 #bgSignIN-UP {
     background-image: url("img/idk.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    height: 100vh; 
+background-size: 100% 100%;
+background-repeat: no-repeat;
+position: relative;
+
 }
 
 body{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .borderContainer {
