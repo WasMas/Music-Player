@@ -9,6 +9,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <script src="./change.js" defer></script>
         <title>Sign in</title>
     </head>
 
@@ -25,9 +26,9 @@
             </nav>
         </header>
         <div id="bgSignIN-UP">
-            <div class="borderContainer">
-                <div class="border">
-                    <div id="signIn">Sign in</div>
+            <div class="border">
+                <div class="formbox-log">
+                    <div id="signIn-Up">Sign in</div>
                     <div class="inputbox">
                         <input type="mail" required />
                         <label for="">Email</label>
@@ -50,9 +51,53 @@
 
                     <div class="NoAccount"><p>Don't have an account ?</p></div>
                     <div id="regLink">
-                        <br /><a class="reg" href="./SignUp.html"
-                            >Register Here</a
+                        <br /><a class="reg" href="#">Register Here</a>
+                    </div>
+                </div>
+                <div class="formbox-reg">
+                    <div id="signIn-Up">Sign up</div>
+                    <form action="#">
+                        <div class="inputbox">
+                            <input id="mail" type="mail" required />
+                            <label for="">Email</label>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="inputbox">
+                            <input id="num" type="tel" required />
+                            <label for="">Phone Number</label>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="inputbox">
+                            <input id="pwd" type="password" required />
+                            <label for="">Password</label>
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                        <div class="inputbox">
+                            <input id="cpwd" type="password" required />
+                            <label for="">Confirm password</label>
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                    </form>
+                    <div class="buttonContainer">
+                        <a href=""
+                            ><button
+                                onclick="passwordmatch()"
+                                class="CreateButton"
+                            >
+                                Create Account
+                            </button></a
                         >
+                        <div class="Orsocials">Or sign in using:</div>
+                        <a href="#" class="fa fa-facebook fa-lg"></a>
+                        <a href="#" class="fa fa-twitter fa-lg"></a>
+                        <a href="#" class="fa fa-google fa-lg"></a>
+                    </div>
+                    <div class="NoAccount">
+                        <p>Already have an account ?</p>
+                    </div>
+                    <div id="logLink">
+                        <br />
+                        <a class="log" href="#">Log in Here</a>
                     </div>
                 </div>
             </div>

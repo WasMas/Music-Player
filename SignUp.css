@@ -204,11 +204,11 @@ label {
     transition: 0s;
 }
 
-#regLink {
+#logLink {
     text-align: center;
 }
 
-.reg {
+.log {
     background: -webkit-linear-gradient(
         45deg,
         rgb(235, 84, 84) 0%,
@@ -223,7 +223,7 @@ label {
     font-size: 20px;
 }
 
-.reg:hover {
+.log:hover {
     position: relative;
     border-bottom: 2px solid;
     border-image: linear-gradient(
