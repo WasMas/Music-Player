@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 body {
@@ -19,11 +18,13 @@ body {
 }
 
 .borderContainer {
+    
     width: 100%;
     height: 100%;
 }
 
 .border {
+    display: block;
     margin: auto;
     margin-top: 50px;
     border: none;
@@ -285,6 +286,7 @@ header {
     width: 100%;
     background-color: #2b2c2e;
     height: 40px;
+    box-sizing: border-box;
 }
 
 .logo {
