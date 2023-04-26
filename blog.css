@@ -193,7 +193,6 @@ header {
 }
 .card {
     position: relative;
-    background-image: url(img/artists2.jpg);
     height: 400px;
     width: 300px;
     margin-right: 3rem;
