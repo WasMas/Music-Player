@@ -4,14 +4,60 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     display: flex;
     min-height: 100vh;
     align-items: center;
-    background-image: url("img/idk.jpg");
+    background-image: url(img/4.jpg);
     background-size: cover;
     flex-direction: column;
+}
+
+
+.globeIco {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.submenuWrapper {
+    position: absolute;
+    max-height: 0px;
+    top: 110%;
+    right: 12%;
+    width: 90px;
+    overflow: hidden;
+    transition: max-height 1.5s;
+}
+
+.submenuWrapper.open-menu {
+    max-height: 400px;
+}
+
+.submenu {
+    border-radius: 5px;
+    padding: 6px 5px 3px;
+    background: #2b2c2e;
+}
+
+.submenuItem {
+    text-decoration: none;
+    color: rgb(212, 219, 219);
+    text-decoration: dotted;
+}
+
+.submenuItem:hover{
+    transition: 0.3s;
+    color: #a07699;
+}
+
+.navitemActive{
+  color: rgb(207, 136, 186);
+  text-decoration: none;
+  cursor: default;
 }
 
 li,
@@ -29,10 +75,12 @@ button {
 header {
     display: flex;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 5%;
     width: 100%;
     background-color: #2b2c2e;
-    height: 50px;
+    height: 43px;
+    z-index: 99999;
+    position: fixed;
 }
 
 .logo {
@@ -140,6 +188,8 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
+    background-image: url(img/8.jpg);
+    width: 100%;
 }
 .card {
     position: relative;
@@ -181,8 +231,15 @@ header {
 }
 
 .title {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: 700;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    background: -webkit-linear-gradient(#24acc4, #c312f8af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: 0;
 }
 
 .wrapper {
@@ -253,5 +310,256 @@ header {
 @media screen and (max-width: 550px) {
     .carousel img {
         width: 100%;
+    }
+}
+
+.song-playlists {
+    padding: 20px 40px;
+}
+.song-playlists h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.song-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.song-playlists .list .item {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.song-playlists .list .item:hover {
+    background-color: #252525;
+}
+.song-playlists .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.song-playlists .list .item .play {
+    position: relative;
+}
+.song-playlists .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-image: linear-gradient(
+        45deg,
+        rgb(144, 113, 247) 0%,
+        rgb(235, 91, 139) 50%,
+        rgb(119, 100, 226) 100%
+    );
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.song-playlists .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.song-playlists .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.song-playlists .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.song-playlists hr {
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+
+h2 {
+    left: auto;
+
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+h3 {
+    left: auto;
+    color: #75cef7;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+h4 {
+    left: auto;
+    color: #ffffff;
+    color: #e095dd;
+    margin-bottom: 20px;
+}
+h5 {
+    left: auto;
+    color: #e095dd;
+    margin-bottom: 20px;
+}
+
+.premsection {
+    display: flex;
+    gap: 50px;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+:root {
+    --card-height: 50vh;
+    --card-width: calc(var(--card-width) / 1.5);
+}
+.box {
+    min-width: 140px;
+    width: 500px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.premium {
+    background: 191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 2em;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+    font-family: cursive;
+}
+.premium:hover {
+    color: #785ed4;
+    transition: color 1s;
+}
+.premium:hover:before,
+.premium:hover:after {
+    animation: none;
+    opacity: 80%;
+}
+.premium::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+        var(--rotate),
+        #dd9393,
+        #70b7c9 43%,
+        #b858a3
+    );
+    position: absolute;
+
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+.premium::after {
+    position: absolute;
+    content: "";
+    top: (var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+        var(--rotate),
+        #b87575,
+        rgb(203, 119, 214) 43%,
+        rgb(178, 149, 248)
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+}
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+.reviews {
+    padding: 40px 0;
+    background: #247477;
+    color: #434343;
+    text-align: center;
+}
+.inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.border {
+    width: 900px;
+    height: 6px;
+    background: #70b7c9;
+    margin: 26px auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col {
+    flex: 33.33%;
+    gap: 30px;
+    display: flex;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.review {
+    background: #8abfe2;
+    padding: 30px;
+}
+.review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: center;
+}
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.stars {
+    color: rgb(227, 235, 126);
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
     }
 }

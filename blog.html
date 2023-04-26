@@ -2,40 +2,61 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
-        <title>Draggable Image Slider | CodingNepal</title>
+        <title>Blog</title>
         <link rel="stylesheet" href="blog.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         />
-        <script src="script.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        />
+        <script src="blog.js" defer></script>
     </head>
 
     <body>
+        <!-- navbar -->
         <header>
             <img class="logo" src="img/logo3.JPG" alt="logo" />
+
             <nav>
                 <ul class="navlinks">
                     <li><a class="navitem" href="#">Home</a></li>
-                    <li><a class="navitem" href="#">Blog</a></li>
+                    <li><a class="navitemActive" href="#">Blog</a></li>
                     <li><a class="navitem" href="#">Services</a></li>
                     <li><a class="navitem" href="#">About</a></li>
+                    <li><a class="navitem" href="#">Contact Us</a></li>
                 </ul>
             </nav>
+            <img
+                class="globeIco"
+                src="img/globe.JPG"
+                alt="globe-icon"
+                onclick="toggleMenu()"
+            />
+            <div class="submenuWrapper" id="subMenu">
+                <div class="submenu">
+                    <div><a class="submenuItem" href="#">• French</a></div>
+                    <div><a class="submenuItem" href="#">• Spanish</a></div>
+                    <div><a class="submenuItem" href="#">• Arabic</a></div>
+                </div>
+            </div>
+            <!-- sign in button -->
             <div class="buttonContainer">
-                <a href="./form.html"
-                    ><button class="loginButton">Log in</button></a
-                >
+                <a href="./form.html"><button class="loginButton">Log in</button></a>
             </div>
         </header>
 
+        <!-- cards -->
+
         <div class="bodycontent">
-            <div class="card" style="background-image: url(img/artists2.JPG)">
+            <div class="card">
                 <div class="gradient"></div>
                 <div class="info">
                     <div class="text">Discover artists</div>
-                    <div class="title">ARTISTS</div>
+                    <div class="title"><a href="#topartists">ARTISTS</a></div>
                 </div>
 
                 <div class="time">LISTEN TO WHO <span>YOU WANT</span></div>
@@ -54,7 +75,7 @@
                 ></div>
                 <div class="info">
                     <div class="text">Trending albums</div>
-                    <div class="title">ALBUMS</div>
+                    <div class="title"><a href="#topalbums">ALBUMS</a></div>
                 </div>
 
                 <div class="time">FIND <span>ALBUMS</span></div>
@@ -73,24 +94,220 @@
                 ></div>
                 <div class="info">
                     <div class="text">Buy Premium</div>
-                    <div class="title">PREMIUM</div>
+                    <div class="title"><a href="#premium">PREMIUM</a></div>
                 </div>
 
                 <div class="time">UNLOCK MORE<span>FEATURES</span></div>
             </div>
         </div>
 
+        <!-- playlists show  -->
+
+        <div class="song-playlists">
+            <h2 id="topartists">Top Artists</h2>
+
+            <div class="list">
+                <div class="item">
+                    <img src="img/melanie.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Melanie Martinez</h4>
+                    <p>Indie pop artist with her new album Portals...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/fifty.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Fifty Fifty</h4>
+                    <p>Kpop group, latest hit single CUPID...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/taylor.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Taylor Swift</h4>
+                    <p>Pop artist with latest hit album Midnights...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/ive.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>IVE</h4>
+                    <p>Pop artist with latest hit album Midnights...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/weeknd.webp" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>The Weeknd</h4>
+                    <p>Pop artist with latest hit album Midnights...</p>
+                </div>
+            </div>
+
+            <h2 id="topalbums">Newest Albums</h2>
+
+            <div class="list">
+                <div class="item">
+                    <img src="img/album2.png" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Melanie Martinez</h4>
+                    <p>Indie pop artist with her new album Portals...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/album3.png" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Fifty Fifty</h4>
+                    <p>Kpop group, latest hit single CUPID...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/album1.png" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Taylor Swift</h4>
+                    <p>Pop artist with latest hit album Midnights...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/album6.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>IVE</h4>
+                    <p>Pop artist with latest hit album Midnights...</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/album7.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>The Weeknd</h4>
+                    <p>Pop artist with latest hit album Midnights...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium  -->
+        <h2 id="premium">Premium Offers</h2>
+        <div class="premsection">
+            <div class="box">
+                <h2>LIMITED TIME OFFER</h2>
+
+                <h4>
+                    Go Premium and enjoy full control of your listening. Cancel
+                    anytime.
+                </h4>
+                <h5>
+                    $0 for 3 months of Premium Enjoy ad-free music listening,
+                    offline playback, and more. Cancel anytime.
+                </h5>
+                <h3>
+                    Interested? Check our services for viewing offers and
+                    purchasing.
+                </h3>
+            </div>
+            <div class="premium">
+                <h2>Services</h2>
+            </div>
+        </div>
+
+        <!-- carousel/faq -->
+        <h2></h2>
+        <h2>FAQ</h2>
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
             <div class="carousel">
-                <img src="img/album1.png" alt="img" draggable="false" />
-                <img src="img/album2.png" alt="img" draggable="false" />
-                <img src="img/album3.png" alt="img" draggable="false" />
-                <img src="img/album4.png" alt="img" draggable="false" />
-                <img src="img/album5.jpg" alt="img" draggable="false" />
-                <img src="img/album6.jpg" alt="img" draggable="false" />
+                <img src="img/slide1.jpg" alt="img" draggable="false" />
+                <img src="img/slide2.jpg" alt="img" draggable="false" />
+                <img src="img/slide3.jpg" alt="img" draggable="false" />
+                <img src="img/slide4.jpg" alt="img" draggable="false" />
+                <img src="img/slide5.jpg" alt="img" draggable="false" />
             </div>
             <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <!-- reviews -->
+
+        <div class="Reviews">
+            <div class="inner">
+                <h2>Reviews</h2>
+                <div class="border">
+                    <div class="row">
+                        <div class="col">
+                            <div class="review">
+                                <img src="img/profile3.JPG" alt="" />
+                                <div class="name">Poppy The Cat</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>
+                                    I'm just a cat, I don't understand anything
+                                    about apps or music or even reviews so...
+                                    Meow Meow!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="review">
+                                <img src="img/profile3.JPG" alt="" />
+                                <div class="name">Poppy The Cat</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>
+                                    I'm just a cat, I don't understand anything
+                                    about apps or music or even reviews so...
+                                    Meow Meow!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="review">
+                                <img src="img/profile3.JPG" alt="" />
+                                <div class="name">Poppy The Cat</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>
+                                    I'm just a cat, I don't understand anything
+                                    about apps or music or even reviews so...
+                                    Meow Meow!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

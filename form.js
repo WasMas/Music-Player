@@ -9,4 +9,3 @@ SignupLink.addEventListener('click', ()=>{
 LoginLink.addEventListener('click', ()=>{
     container.classList.remove('active')
 })
-
