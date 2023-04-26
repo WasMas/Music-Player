@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./services.css" />
+        <script src="services.js" defer></script>
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+        <title>Services</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo3.JPG" alt="logo" />
+
+            <nav>
+                <ul class="navlinks">
+                    <li><a class="navitem" href="#">Home</a></li>
+                    <li><a class="navitem" href="./blog.html">Blog</a></li>
+                    <li><a class="navitemActive" href="#">Services</a></li>
+                    <li><a class="navitem" href="#">About</a></li>
+                    <li><a class="navitem" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img
+                class="globeIco"
+                src="img/globe.JPG"
+                alt="globe-icon"
+                onclick="toggleMenu()"
+            />
+            <div class="submenuWrapper" id="subMenu">
+                <div class="submenu">
+                    <div><a class="submenuItem" href="#">• French</a></div>
+                    <div><a class="submenuItem" href="#">• Spanish</a></div>
+                    <div><a class="submenuItem" href="#">• Arabic</a></div>
+                </div>
+            </div>
+            <!-- sign in button -->
+            <div class="buttonContainer">
+                <a href="./form.html"
+                    ><button class="loginButton">Log in</button></a
+                >
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
     margin: 0;
     padding: 0;
-
     font-family: "Poppins", sans-serif;
 }
 body {
@@ -23,7 +23,7 @@ body {
     height: 100%;
 }
 
-.border.active{
+.border.active {
     height: 780px;
 }
 
@@ -39,29 +39,29 @@ body {
     box-shadow: 0px 0px 20px 20px rgba(173, 216, 230, 0.205);
     margin-right: 70px;
     border-radius: 20px;
-    transition: height .2s ease;
+    transition: height 0.2s ease;
     overflow: hidden;
 }
 
-.border.active .formbox-log{
-    transition: transform .30s ease;
-    transform: translateX(-800px);    
+.border.active .formbox-log {
+    transition: transform 0.3s ease;
+    transform: translateX(-800px);
 }
 
-.border .formbox-log{
-    transition: transform .30s ease;
+.border .formbox-log {
+    transition: transform 0.3s ease;
     transform: translateX(0);
-} 
+}
 
-.border .formbox-reg{
+.border .formbox-reg {
     position: relative;
     transform: translateX(800px);
-    margin-top:-589px;
-    transition: transform .30s ease;
+    margin-top: -589px;
+    transition: transform 0.3s ease;
 }
 
-.border.active .formbox-reg{
-    transition: transform .30s ease;
+.border.active .formbox-reg {
+    transition: transform 0.3s ease;
     transform: translateX(0);
 }
 
