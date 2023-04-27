@@ -26,15 +26,7 @@ body {
     margin-right: 20px;
 }
 
-.submenuWrapper {
-    position: absolute;
-    max-height: 0px;
-    top: 110%;
-    right: 12%;
-    width: 90px;
-    overflow: hidden;
-    transition: max-height 1.5s;
-}
+
 
 .submenuWrapper.open-menu {
     max-height: 400px;
