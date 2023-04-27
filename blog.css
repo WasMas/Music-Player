@@ -166,6 +166,18 @@ header {
     box-shadow: 0 0 5px 10px white;
 }
 
+.loginButton:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+
+
 .bodycontent {
     font-family: "Roboto", sans-serif;
     background-size: cover;
@@ -369,30 +381,7 @@ header {
     border-color: #636363;
 }
 
-h2 {
-    left: auto;
 
-    color: #ffffff;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-h3 {
-    left: auto;
-    color: #75cef7;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-h4 {
-    left: auto;
-    color: #ffffff;
-    color: #e095dd;
-    margin-bottom: 20px;
-}
-h5 {
-    left: auto;
-    color: #e095dd;
-    margin-bottom: 20px;
-}
 
 .premsection {
     display: flex;
@@ -493,58 +482,201 @@ h5 {
     }
 }
 
-.reviews {
-    padding: 40px 0;
+.reviews{
+    padding-bottom: 50em;
+    padding:40px 0;
+    display:relative;
     background: #247477;
-    color: #434343;
+    color:#434343;
     text-align: center;
-}
-.inner {
+    margin-bottom: 100px;
+
+    }
+  .inner{
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
-}
-.border {
-    width: 900px;
-    height: 6px;
-    background: #70b7c9;
-    margin: 26px auto;
-}
-.row {
+    margin-bottom: 100px;
+   
+
+  }
+  .border{
+    width:900px;
+    height:6px;
+    background:#70b7c9;
+    margin:26px auto;
+  }
+  .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.col {
+    
+  }
+  .col{
     flex: 33.33%;
-    gap: 30px;
-    display: flex;
+    gap:30px;
+    display:flex;
     max-width: 33.33%;
     box-sizing: border-box;
     padding: 15px;
-}
-.review {
+   
+  }
+  .review{
     background: #8abfe2;
     padding: 30px;
-}
-.review img {
+  
+  }
+  .review img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     position: center;
-}
-.name {
+  
+  }
+  .name{
     font-size: 20px;
     text-transform: uppercase;
-    margin: 20px 0;
-}
-.stars {
-    color: rgb(227, 235, 126);
+    margin:20px 0;
+  }
+  .stars{
+    color:rgb(227, 235, 126);
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width:600px){
+    .col{
+      flex:100%;
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    left: auto;
+
+    color: #ffffff;
+    font-size: 22px;
     margin-bottom: 20px;
 }
-@media screen and (max-width: 600px) {
-    .col {
-        flex: 100%;
-        max-width: 100%;
-    }
+h3 {
+    left: auto;
+    color: #75cef7;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+h4 {
+    left: auto;
+    
+    color: #e095dd;
+    margin-bottom: 20px;
+}
+h5 {
+    left: auto;
+    color: #e095dd;
+    margin-bottom: 20px;
+}
+h6{
+    font-size: 12px;
+    
+    color: #ffffff;
+  }
+
+h7{
+    font-size: 10px;
+    color: #e095dd;
+  }
+
+footer{
+  position:relative;
+  bottom: 0;
+  background:#2b2c2e;
+  width: 100%;
+  height: auto;
+  margin-top:50vh;
+  padding-top:15px;
+  
+  
+}
+.footer li{
+    list-style: none;
+}
+.footer p{
+   
+        left: auto;
+        color: #75cef7;
+        font-size: 13px;
+        margin-bottom: 15px;
+}
+.footercontent{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    left: auto;
+    color: #75cef7;
+    font-size: 18px;
+    margin-bottom:30px;
+    
+}
+.footercontentactive {
+    list-style: none;
+    bottom: -5px;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgb(212, 219, 219);
+    text-decoration: none;
+    position: relative;
+    background-color: #2b2c2e;
+    margin-bottom: 10px;
+}
+.footercontent :after {
+    content: "";
+    position: absolute;
+    background-color: #a07699;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.footercontentactive :hover:after {
+    width: 100%;
+}
+
+.footercontentactive:hover {
+    color: rgb(207, 136, 186);
+}
+.socials{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin:1rem 0 ;
+
+}
+.socials li{
+  margin : 0 10px;
+  
+}
+.socials a{
+  list-style: none;
+  text-decoration: none;
+  color:rgb(243, 234, 243);
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+.socials a:hover{
+  background: -webkit-linear-gradient( #eb2bbbaf ,#5fd0e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footerbot{
+    position: absolute;
+  width:100%;
+ bottom:0;
+  
+  text-align: center;
+  background-color:#1d1d1f;
 }
