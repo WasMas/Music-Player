@@ -44,6 +44,16 @@ body {
     text-decoration: dotted;
 }
 
+.submenuWrapper {
+    position: absolute;
+    max-height: 0px;
+    top: 110%;
+    right: 12%;
+    width: 90px;
+    overflow: hidden;
+    transition: max-height 1.5s;
+}
+
 .submenuItem:hover {
     transition: 0.3s;
     color: #a07699;
