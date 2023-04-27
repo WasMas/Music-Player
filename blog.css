@@ -166,16 +166,6 @@ header {
     box-shadow: 0 0 5px 10px white;
 }
 
-.loginButton:active:after {
-    box-shadow: 0 0 0 0 white;
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    transition: 0s;
-}
-
 .bodycontent {
     font-family: "Roboto", sans-serif;
     background-size: cover;
