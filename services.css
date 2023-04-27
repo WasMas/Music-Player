@@ -536,7 +536,7 @@ h3 {
     margin-top: 5px;
 }
 
-.pricing-action {
+.checkout-action {
     font-weight: bold;
     margin: auto 3em 2em 3em;
     padding: 1em 2em;
@@ -551,7 +551,9 @@ h3 {
     position: absolute;
     margin-top: 600px;
     margin-left: 300px;
+    border: none;
+    cursor: pointer;
 }
-.pricing-action:hover {
+.checkout-action:hover {
     background-position: right center;
 }
