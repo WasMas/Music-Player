@@ -366,6 +366,7 @@ h2 {
     font-weight: bold;
     margin: auto 3em 2em 3em;
     padding: 1em 2em;
+    width: 243px;
     color: #fff;
     border-radius: 30px;
     background-image: linear-gradient(135deg,#a93bfe,#584efd);
