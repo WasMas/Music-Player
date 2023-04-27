@@ -11,10 +11,14 @@
             href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         />
         <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <link rel="stylesheet" type="text/css" href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css"
+        />
         <title>Services</title>
     </head>
     <body>
@@ -322,126 +326,182 @@
     </div>
     <form action="#">
         <div class="FormBoxWrapper">
-        <div class="left-stuff">
-            <h3>Billing Adress</h3>
-            <label for="fullName"
-                ><i class="fa fa-user"></i>&nbsp&nbspFull Name</label
-            ><br>
-            <input
-                type="text"
-                id="fullName"
-                name="firstname"
-                placeholder="Sirine Rim Azyz"
-            /><br>
-            <label for="email"><i class="fa fa-envelope"></i> Email</label><br>
-            <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="jo3t@ji3an.com"
-            /><br>
-            <label for="adr"
-                ><i class="fa fa-location-arrow"></i> Address</label
-            ><br>
-            <input type="text" id="adr" name="address" placeholder="Darna ?" /><br>
-            <label for="city"><i class="fa fa-globe"></i> City</label><br>
-            <input type="text" id="city" name="city" placeholder="New York" /><br>
-            <div class="togetherWrapper">
-                <div class="together">
-                    <label for="state">State</label>
-                    <input
-                        type="text"
-                        id="state"
-                        name="state"
-                        placeholder="nrsh"
-                    />
+            <div class="left-stuff">
+                <h3>Billing Adress</h3>
+                <label for="fullName"
+                    ><i class="fa fa-user"></i>&nbsp&nbspFull Name</label
+                ><br />
+                <input
+                    type="text"
+                    id="fullName"
+                    name="firstname"
+                    placeholder="Sirine Rim Azyz"
+                /><br />
+                <label for="email"
+                    ><i class="fa fa-envelope"></i>&nbsp&nbspEmail</label
+                ><br />
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="jo3t@ji3an.com"
+                /><br />
+                <label for="adr"
+                    ><i class="fa fa-location-arrow"></i
+                    >&nbsp&nbspAddress</label
+                ><br />
+                <input
+                    type="text"
+                    id="adr"
+                    name="address"
+                    placeholder="Darna ?"
+                /><br />
+                <label for="city"
+                    ><i class="fa fa-globe"></i>&nbsp&nbspCity</label
+                ><br />
+                <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="New York"
+                /><br />
+                <div class="togetherWrapper">
+                    <div class="together">
+                        <label for="state">State</label>
+                        <input
+                            type="text"
+                            id="state"
+                            name="state"
+                            placeholder="nrsh"
+                        />
+                    </div>
+                    <div class="together">
+                        <label for="zip">Zip</label>
+                        <input
+                            type="text"
+                            id="zip"
+                            name="zip"
+                            placeholder="Ar9am"
+                        />
+                    </div>
                 </div>
-                <div class="together">
-                    <label for="zip">Zip</label>
-                    <input
-                        type="text"
-                        id="zip"
-                        name="zip"
-                        placeholder="Ar9am"
-                    />
-                </div>       
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr" />
+                    Shipping address same as billing
+                </label>
             </div>
-            <label>
-                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-              </label>
-              <input type="submit" value="Continue to checkout" class="btn">
-        </div>
-        <div class="right-stuff">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="cards-container">
-              <i class="dc_payment_icons_flat_32 dc_mastercard_flat" title="MasterCard" ></i>
-              <i class="dc_payment_icons_flat_32 dc_visa_flat" title="Visa"></i>
-              <i class="dc_payment_icons_flat_32 dc_visa_electron_flat" title="Visa Electron"></i>
-              <i class="dc_payment_icons_flat_32 dc_paypal_flat" title="PayPal"></i>
-              <i class="dc_payment_icons_flat_32 dc_western_union_flat" title="Western Union"></i>
-            </div><br>
-            <label for="cardName">Card Name</label><br>
-            <input
-                type="text"
-                id="cardName"
-                name="cardname"
-                placeholder="Wassim Wassim Wassim"
-            /><br>
-            <label for="cardNumber">Credit card number</label><br>
-            <input
-                type="text"
-                id="cardNumber"
-                name="cardnumber"
-                placeholder="Barshaaa nwemer"
-            /><br>
-            <label for="expMonth">Expiration Month</label><br>
-            <input
-                type="text"
-                id="expmonth"
-                name="expmonth"
-                placeholder="February"
-            /><br>
-            <div class="togetherWrapper">
-                <div class="together">
-                    <label for="expYear">Expiration Year</label>
-                    <input
-                        type="text"
-                        id="expyear"
-                        name="expyear"
-                        placeholder="2002"
-                    />
+            <div class="right-stuff">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="cards-container">
+                    <i
+                        class="dc_payment_icons_flat_32 dc_mastercard_flat"
+                        title="MasterCard"
+                    ></i>
+                    <i
+                        class="dc_payment_icons_flat_32 dc_visa_flat"
+                        title="Visa"
+                    ></i>
+                    <i
+                        class="dc_payment_icons_flat_32 dc_visa_electron_flat"
+                        title="Visa Electron"
+                    ></i>
+                    <i
+                        class="dc_payment_icons_flat_32 dc_paypal_flat"
+                        title="PayPal"
+                    ></i>
+                    <i
+                        class="dc_payment_icons_flat_32 dc_western_union_flat"
+                        title="Western Union"
+                    ></i>
                 </div>
-                <div class="together">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="~1002~" />
+                <br />
+                <label for="cardName">Card Name</label><br />
+                <input
+                    type="text"
+                    id="cardName"
+                    name="cardname"
+                    placeholder="Wassim Wassim Wassim"
+                /><br />
+                <label for="cardNumber">Credit card number</label><br />
+                <input
+                    type="text"
+                    id="cardNumber"
+                    name="cardnumber"
+                    placeholder="Barshaaa nwemer"
+                /><br />
+                <label for="expMonth">Expiration Month</label><br />
+                <input
+                    type="text"
+                    id="expmonth"
+                    name="expmonth"
+                    placeholder="February"
+                /><br />
+                <div class="togetherWrapper">
+                    <div class="together">
+                        <label for="expYear">Expiration Year</label>
+                        <input
+                            type="text"
+                            id="expyear"
+                            name="expyear"
+                            placeholder="2002"
+                        />
+                    </div>
+                    <div class="together">
+                        <label for="cvv">CVV</label>
+                        <input
+                            type="text"
+                            id="cvv"
+                            name="cvv"
+                            placeholder="~1002~"
+                        />
+                    </div>
                 </div>
             </div>
-            <label>         
+            <button class="pricing-action">
+                Continue to checkout
+            </button>
+            
         </div>
-    </div>
     </form>
     <footer>
         <div class="footercontent">
-           <p> MySound</p>
-           <h6>Contact information:
-              If you have any questions, comments, or suggestions, please feel free to contact us at info@musiclovers.com.  </h6>
-           <h6>  You can also follow us on Twitter and Instagram for the latest music news and updates.</h6>
-           <div class="socials">
-               <li><a href="#"><i class="fa fa-facebook socialitem"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter socialitem"></i></a></li>
-               <li><a href="#"><i class="fa fa-google socialitem"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram socialitem"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin-square socialitem"></i></a></li>
-               <div>
-                  <li><a class="navitem" href="#">Contact Us</a></li>
-               </div>
-               
-              </div>
-              
-          <div class="footerbot">
-         <h7>Copyright © 2023 by LCS2. All rights reserved.</h7>
+            <p>MySound</p>
+            <h6>
+                Contact information: If you have any questions, comments, or
+                suggestions, please feel free to contact us at
+                info@musiclovers.com.
+            </h6>
+            <h6>
+                You can also follow us on Twitter and Instagram for the latest
+                music news and updates.
+            </h6>
+            <div class="socials">
+                <li>
+                    <a href="#"><i class="fa fa-facebook socialitem"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter socialitem"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google socialitem"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram socialitem"></i></a>
+                </li>
+                <li>
+                    <a href="#"
+                        ><i class="fa fa-linkedin-square socialitem"></i
+                    ></a>
+                </li>
+                <div>
+                    <li><a class="navitem" href="#">Contact Us</a></li>
+                </div>
+            </div>
+
+            <div class="footerbot">
+                <h7>Copyright © 2023 by LCS2. All rights reserved.</h7>
+            </div>
         </div>
-        
-     </footer>
+    </footer>
 </html>

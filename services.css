@@ -494,7 +494,7 @@ footer {
 
 .FormBoxWrapper {
     background-color: #fffffff3;
-    height: 600px;
+    height: 670px;
     width: 1120px;
     border-radius: 20px;
     margin: auto;
@@ -534,4 +534,24 @@ h3 {
 
 .cards-container {
     margin-top: 5px;
+}
+
+.pricing-action {
+    font-weight: bold;
+    margin: auto 3em 2em 3em;
+    padding: 1em 2em;
+    width: 500px;
+    color: #fff;
+    border-radius: 30px;
+    background-image: linear-gradient(135deg, #a93bfe, #584efd);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    background-size: 200% auto;
+    transition: all 0.5s;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 300px;
+}
+.pricing-action:hover {
+    background-position: right center;
 }
