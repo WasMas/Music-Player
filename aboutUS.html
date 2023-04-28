@@ -1,130 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mySound Website</title>
-    <link rel="stylesheet" href="aboutUS.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mySound Website</title>
+        <link rel="stylesheet" href="aboutUS.css" />
+        <script src="globeanimation.js" defer></script>
 
+        <script
+            src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo3.JPG" alt="logo" />
 
-    <script
-      src="https://kit.fontawesome.com/7a4b62b0a4.js"
-      crossorigin="anonymous"
-    ></script>
-
-
-  </head>
-  <body>
-    <header>
-      <!--nav barrrrrrr-->
-    </header>
-    <main>
-      <section class="bg-section" id="bg">
-        <div class="container">
-          <h1>my Sound</h1>
-          <h3>Your music, podcast, and playlists take the center stage.</h3>
-          <p id="bg-statement">
-            mySound is the best way to organize and enjoy the music, playlists, and
-            podcasts you already have — and look for new ones. Enjoy
-            all the entertainment mySound has to offer on your Mac and PC.
-          </p>
-        </div>
-      </section>
-      <section class="music-section" id="music">
-        <div class="container">
-          <h2   style="font-size:25px;">
-            <span><i class="fa-sharp fa fa-music" style="font-size:40px; margin-right:10px;" ></i></span>
-            Music
-          </h2>
-          <h3>45 million songs. Zero ads.</h3>
-          <h4 style="font-size:1.2em; font-weight: 300;margin: 10px;text-align: center;">
-
-            Our mission is to provide a platform for music enthusiasts
-             to discover and enjoy their favorite music. 
-
-             We strive to create a community of like-minded individuals 
-             who share a deep love for music and want to explore the 
-             endless possibilities that it offers.
-            With us you can stream over 45 million songs, ad-free.
-
-            listen offline to All the music saved in your very own personal myTunes library
-           <br> <b style="font-weight: 400;">Start your free three-month trial with no commitment,
-            and cancel anytime.</b>
-          </h4>
-          <button class="primary-btn">Start Your Free trial</button>
-
-          <p>
-            Our Music is available for iOS and Android
-            devices.
-          </p>
-          <div class="ipad-iphone-img"><!--3aw4 bil homepage*/-->
-            <img src="img/My project.png" alt="iphone ipad" style="width:70vw;" />
-          </div>
-        </div>
-      </section>
-      <section class="about-music container">
-        <h3>the Music website you've always wished for. Granted.</h3>
-        <p style="font-size: 1.5em;">
-         What sets us apart from other music websites is our commitment
-        to creating a community of music lovers. <b style="color:#BE6083; font-weight: bold;">We offer exclusive 
-          content, such as interviews with up-and-coming artists</b>, and 
-          we encourage our readers to share their own music 
-          recommendations and opinions. We also provide personalized 
-          music recommendations based on your listening 
-         habits, so you'll never run out of new music to discover<b>...</b>...
-        </p>
-        <button class="secondary-btn">Learn more</button>
-              </section>
-
-        <div class="mac-img">
-          <!--<img src="images/mac1.png" alt="macbook" />-->
-        </div>
-      <section class="concert-section" id="video">
-        <div class="container">
-          <h3 id="history">OUR STORY</h3>
-          <p id="sory" style="font-size: 1.5em; font-weight: 400;">
-            mySound was founded in 2018, and since then, 
-            we've grown into a thriving community of music enthusiasts. 
-            We've interviewed some of the biggest names in music, 
-            as well as discovered some incredible emerging artists 
-            along the way. Our goal is to continue growing and expanding 
-            our community,
-             and we can't wait to see where our journey takes us next.
-            <p style="font-size: x-large;">If you have any questions, comments, or suggestions, 
-            please feel free to contact us at <a style="color:#0DB5D6; font-weight: bold;" href="mailto:MySound@gmail.com">mySound@gmail.com</a> 
-            You can also follow us on Twitter and Instagram for the 
-            latest music news and updates.</p>
-          </p>
-        </div>
-      </section>
-      <div class="container">
-        <section class="gift-section" id="gift">
-          <div class="gift-card">
-            <img src="img/gift_card.png" alt="gift card" />
-          </div>
-          <div class="gift-content">
-            <h3  style=" font-weight: bold;text-decoration: underline;">Limited Offers</h3>
-        
-
-              <p>We also offer a special incentive for our premium 
-                members -every month, we randomly select a few lucky
-                 winners from our premium members and give them a gift
-                  card for our limited eddition music</p>
-                  <p>At our website, we're passionate about music and believe
-                     that it should be accessible to everyone. Our limited gift 
-                     cards and premium membership program are just some of the 
-                     ways we strive to make that a reality.<b > Join us on our mission
-                     to spread the gift of music.</b></p>
-            <hr />
-            <div>
-              <a href="linkSERVICES">
-              <button class="secondary-btn">GO PRIMEUM</button></a>
+            <nav>
+                <ul class="navlinks">
+                    <li><a class="navitem" href="#">Home</a></li>
+                    <li><a class="navitem" href="./blog.html">Blog</a></li>
+                    <li><a class="navitem" href="./services.html">Services</a></li>
+                    <li><a class="navitemActive" href="#">About</a></li>
+                </ul>
+            </nav>
+            <img
+                class="globeIco"
+                src="img/globe.JPG"
+                alt="globe-icon"
+                onclick="toggleMenu()"
+            />
+            <div class="submenuWrapper" id="subMenu">
+                <div class="submenu">
+                    <div><a class="submenuItem" href="#">• French</a></div>
+                    <div><a class="submenuItem" href="#">• Spanish</a></div>
+                    <div><a class="submenuItem" href="#">• Arabic</a></div>
+                </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    
-  </body>
+            <!-- sign in button -->
+            <div class="buttonContainer">
+                <a href="./form.html"
+                    ><button class="loginButton">Log in</button></a
+                >
+            </div>
+        </header>
+        <main>
+            <section class="bg-section" id="bg">
+                <div class="container">
+                    <h1>my Sound</h1>
+                    <h3>
+                        Your music, podcast, and playlists take the center
+                        stage.
+                    </h3>
+                    <p id="bg-statement">
+                        mySound is the best way to organize and enjoy the music,
+                        playlists, and podcasts you already have — and look for
+                        new ones. Enjoy all the entertainment mySound has to
+                        offer on your Mac and PC.
+                    </p>
+                </div>
+            </section>
+            <section class="music-section" id="music">
+                <div class="container">
+                    <h2 style="font-size: 25px">
+                        <span
+                            ><i
+                                class="fa-sharp fa fa-music"
+                                style="font-size: 40px; margin-right: 10px"
+                            ></i
+                        ></span>
+                        Music
+                    </h2>
+                    <h3>45 million songs. Zero ads.</h3>
+                    <h4
+                        style="
+                            font-size: 1.2em;
+                            font-weight: 300;
+                            margin: 10px;
+                            text-align: center;
+                        "
+                    >
+                        Our mission is to provide a platform for music
+                        enthusiasts to discover and enjoy their favorite music.
+                        We strive to create a community of like-minded
+                        individuals who share a deep love for music and want to
+                        explore the endless possibilities that it offers. With
+                        us you can stream over 45 million songs, ad-free. listen
+                        offline to All the music saved in your very own personal
+                        myTunes library
+                        <br />
+                        <b style="font-weight: 400"
+                            >Start your free three-month trial with no
+                            commitment, and cancel anytime.</b
+                        >
+                    </h4>
+                    <button class="primary-btn">Start Your Free trial</button>
+
+                    <p>Our Music is available for iOS and Android devices.</p>
+                    <div class="ipad-iphone-img">
+                        <!--3aw4 bil homepage*/-->
+                        <img
+                            src="img/My project.png"
+                            alt="iphone ipad"
+                            style="width: 70vw"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="about-music container">
+                <h3>the Music website you've always wished for. Granted.</h3>
+                <p style="font-size: 1.5em">
+                    What sets us apart from other music websites is our
+                    commitment to creating a community of music lovers.
+                    <b style="color: #be6083; font-weight: bold"
+                        >We offer exclusive content, such as interviews with
+                        up-and-coming artists</b
+                    >, and we encourage our readers to share their own music
+                    recommendations and opinions. We also provide personalized
+                    music recommendations based on your listening habits, so
+                    you'll never run out of new music to discover<b>...</b>...
+                </p>
+                <button class="secondary-btn">Learn more</button>
+            </section>
+
+            <div class="mac-img">
+                <!--<img src="images/mac1.png" alt="macbook" />-->
+            </div>
+            <section class="concert-section" id="video">
+                <div class="container">
+                    <h3 id="history">OUR STORY</h3>
+                    <p id="sory" style="font-size: 1.5em; font-weight: 400">
+                        mySound was founded in 2018, and since then, we've grown
+                        into a thriving community of music enthusiasts. We've
+                        interviewed some of the biggest names in music, as well
+                        as discovered some incredible emerging artists along the
+                        way. Our goal is to continue growing and expanding our
+                        community, and we can't wait to see where our journey
+                        takes us next.
+                    </p>
+
+                    <p style="font-size: x-large">
+                        If you have any questions, comments, or suggestions,
+                        please feel free to contact us at
+                        <a
+                            style="color: #0db5d6; font-weight: bold"
+                            href="mailto:MySound@gmail.com"
+                            >mySound@gmail.com</a
+                        >
+                        You can also follow us on Twitter and Instagram for the
+                        latest music news and updates.
+                    </p>
+                </div>
+            </section>
+            <div class="container">
+                <section class="gift-section" id="gift">
+                    <div class="gift-card">
+                        <img src="img/gift_card.png" alt="gift card" />
+                    </div>
+                    <div class="gift-content">
+                        <h3
+                            style="
+                                font-weight: bold;
+                                text-decoration: underline;
+                            "
+                        >
+                            Limited Offers
+                        </h3>
+
+                        <p>
+                            We also offer a special incentive for our premium
+                            members -every month, we randomly select a few lucky
+                            winners from our premium members and give them a
+                            gift card for our limited eddition music
+                        </p>
+                        <p>
+                            At our website, we're passionate about music and
+                            believe that it should be accessible to everyone.
+                            Our limited gift cards and premium membership
+                            program are just some of the ways we strive to make
+                            that a reality.<b>
+                                Join us on our mission to spread the gift of
+                                music.</b
+                            >
+                        </p>
+                        <hr />
+                        <div>
+                            <a href="linkSERVICES">
+                                <button class="secondary-btn">
+                                    GO PRIMEUM
+                                </button></a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footercontent">
+                <p>MySound</p>
+                <h6>
+                    Contact information: If you have any questions, comments, or
+                    suggestions, please feel free to contact us at
+                    info@musiclovers.com.
+                </h6>
+                <h6>
+                    You can also follow us on Twitter and Instagram for the
+                    latest music news and updates.
+                </h6>
+                <div class="socials">
+                    <li>
+                        <a href="#"
+                            ><i class="fa fa-facebook socialitem"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter socialitem"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google socialitem"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa fa-instagram socialitem"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa fa-linkedin-square socialitem"></i
+                        ></a>
+                    </li>
+                    <div>
+                        <li>
+                            <a class="navitem" href="./contactPage.html"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </div>
+                </div>
+
+                <div class="footerbot">
+                    <h7>Copyright © 2023 by LCS2. All rights reserved.</h7>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
