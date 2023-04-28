@@ -16,8 +16,6 @@ body {
         #a62eb6 50%,
         #4d2aa3 100%
     );
-    width: auto;
-    height: 1920px;
 }
 
 .globeIco {
@@ -154,16 +152,6 @@ header {
 
 .loginButton:hover {
     background-position: right center;
-}
-
-.loginButton:active:after {
-    box-shadow: 0 0 0 0 white;
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    transition: 0s;
 }
 
 .margin {
