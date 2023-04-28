@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --purple1: rgba(17, 16, 46, 1);
+    --cyan: #0db5d6;
+    --mypink: #be6083;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    background-color: var(--body);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+section {
+    scroll-margin: 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-section {
+    background-image: url(img/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.bg-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bg-section h1 {
+    font-size: 96px;
+}
+.bg-section h3 {
+    font-size: 32px;
+    font-weight: 300;
+}
+#bg-statement {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+#history {
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.mac-img {
+    border-radius: 10px;
+    margin-left: 7.5vw;
+    margin-right: auto;
+    padding: 0;
+    width: 84vw;
+    height: 90vh;
+    margin-bottom: 10vh;
+    /*background-image: url(images/mac1.png);
+}
+.mac-img:hover{*/
+    animation: change 20s infinite ease-in-out;
+}
+/*.mac-img:hover{animation-play-state: paused;}*/
+
+@keyframes change {
+    0% {
+        background-image: url(img/mac1.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    20% {
+        background-image: url(img/mac3.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    40% {
+        background-image: url(img/mac5.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    60% {
+        background-image: url(img/mac4.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    80% {
+        background-image: url(img/mac6.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    100% {
+        background-image: url(img/mac1.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+}
+
+.music-section {
+    padding-top: 30px;
+    background: var(--purple1);
+}
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ipad-iphone-img {
+    margin-top: -400px;
+    position: relative;
+    top: 25em;
+}
+.primary-btn {
+    background-color: var(--mypink);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.secondary-btn {
+    background-color: var(--cyan);
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about-music {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.concert-section {
+    background-image: url(img/concert_image.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+.concert-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.bg-section,
+.concert-section {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gift-section {
+    scroll-margin: 120px;
+}

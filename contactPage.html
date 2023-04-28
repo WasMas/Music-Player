@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contactPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--nav barrrrr-->
+    <div id="bg">
+    <img src="img/image 3.png" id="bg-im">
+        <p id="titre">contact us</p>
+    </div>
+   <div>
+    <form >
+            <legend>report</legend>
+            <label class="lab" for="nom">FUll NAME</label>
+            <input class="input" name="name" id="nom" class="in" type="text">
+            <label class="lab" for="email">EMAIL</label>
+            <input class="input" name="email" id="email" class="in" type="email">
+            <label class="lab" for="msg">MESSAGE</label>
+            <textarea class="input" name="message" id="msg"></textarea>
+            <input id="submit" type="submit" value="send">
+    </form>
+</div>
+<div id="boxes">
+    <a href="https://www.google.com/maps/place/Faculty+of+Sciences+of+Tunis+(FST)/@36.8335389,10.1449979,17z/data=!3m1!4b1!4m6!3m5!1s0x12fd33133403cc51:0xe751d5ed005a8f47!8m2!3d36.8335346!4d10.1475728!16s%2Fg%2F1226skb5" target="_blank">
+    <img class="img" id="im1" src="img/im1.png" title="see our location on google"></a>
+
+    <img class="img" id="im2" src="img/im2.png" onclick="copyT();" title="copy number to clipboard">
+
+    <a href="mailto:MYSOUND@gmail.com">
+    <img class="img" id="im3" src="img/im3.png" title="send us an email"></a>
+    <img class="img" id="im4" src="img/im4.png" onclick="copyF();"  title="copy number to clipboard">
+</div>
+
+<!--fooooterrrr-->
+<script>
+
+function copyT() {
+
+navigator.clipboard.writeText('(216) 52 000 415');
+alert('text copided:'+'(216) 52 000 415');
+}
+function copyF() {
+
+navigator.clipboard.writeText('(216) 71 957 115');
+alert('text copided:'+'(216) 71 957 115');
+}
+</script>
+
+
+
+
+</body>
+</html>
