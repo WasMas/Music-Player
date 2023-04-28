@@ -6,10 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="contactPage.css">
+    <script src="globeanimation.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+/>
+<link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css"
+/>
 </head>
 <body>
-    <!--nav barrrrr-->
+    <header>
+        <img class="logo" src="img/logo3.JPG" alt="logo" />
+
+        <nav>
+            <ul class="navlinks">
+                <li><a class="navitem" href="#">Home</a></li>
+                <li><a class="navitemActive" href="#">Blog</a></li>
+                <li><a class="navitem" href="./services.html">Services</a></li>
+                <li><a class="navitem" href="./aboutUS.html">About</a></li>
+            </ul>
+        </nav>
+        <img
+            class="globeIco"
+            src="img/globe.JPG"
+            alt="globe-icon"
+            onclick="toggleMenu()"
+        />
+        <div class="submenuWrapper" id="subMenu">
+            <div class="submenu">
+                <div><a class="submenuItem" href="#">• French</a></div>
+                <div><a class="submenuItem" href="#">• Spanish</a></div>
+                <div><a class="submenuItem" href="#">• Arabic</a></div>
+            </div>
+        </div>
+        <!-- sign in button -->
+        <div class="buttonContainer">
+            <a href="./form.html"
+                ><button class="loginButton">Log in</button></a
+            >
+        </div>
+    </header>
     <div id="bg">
     <img src="img/image 3.png" id="bg-im">
         <p id="titre">contact us</p>
@@ -38,6 +82,46 @@
 </div>
 
 <!--fooooterrrr-->
+<footer>
+    <div class="footercontent">
+        <p>MySound</p>
+        <h6>
+            Contact information: If you have any questions, comments, or
+            suggestions, please feel free to contact us at
+            info@musiclovers.com.
+        </h6>
+        <h6>
+            You can also follow us on Twitter and Instagram for the latest
+            music news and updates.
+        </h6>
+        <div class="socials">
+            <li>
+                <a href="#"><i class="fa fa-facebook socialitem"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter socialitem"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-google socialitem"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram socialitem"></i></a>
+            </li>
+            <li>
+                <a href="#"
+                    ><i class="fa fa-linkedin-square socialitem"></i
+                ></a>
+            </li>
+            <div>
+                <li><a class="navitem" href="./contactPage.html">Contact Us</a></li>
+            </div>
+        </div>
+
+        <div class="footerbot">
+            <h7>Copyright © 2023 by LCS2. All rights reserved.</h7>
+        </div>
+    </div>
+</footer>
 <script>
 
 function copyT() {
