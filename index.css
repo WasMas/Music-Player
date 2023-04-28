@@ -152,18 +152,17 @@ header {
     background-position: right center;
 }
 
-.main-container{
+.main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 120px;
 }
 
-.left{
+.left {
     padding: 60px;
-
 }
-.left h1{
+.left h1 {
     font-weight: 900px;
     line-height: 85px;
     font-size: 100px;
@@ -172,23 +171,22 @@ header {
     margin-bottom: 30px;
 }
 
-.left p{
+.left p {
     font-size: 20px;
     line-height: 28px;
     color: rgb(233, 227, 227);
     font-weight: 400;
 }
 
-.right .main-img img{
+.right .main-img img {
     height: 100%;
     width: 100%;
 }
 
-
-.left .exploreBtn{
+.left .exploreBtn {
     position: relative;
     background: #e6e6e6;
-    color:#e6ecf7;
+    color: #e6ecf7;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.4em;
@@ -196,24 +194,23 @@ header {
     font-weight: 400;
     padding: 6px 30px;
     transition: 0.5s;
-    bottom:-10px;
-    left:140px;
-    
+    bottom: -10px;
+    left: 140px;
 }
 
-.left .exploreBtn:hover{
+.left .exploreBtn:hover {
     background: var(--clr);
-    color:var(--clr);
+    color: var(--clr);
     letter-spacing: 0.11em;
     box-shadow: 0 0 35px var(--clr);
 }
-.left .exploreBtn:before{
-    content:'';
+.left .exploreBtn:before {
+    content: "";
     position: absolute;
     inset: 2px;
     background-image: url(img/buttonbackground.JPG);
 }
-.exploreBtn span{
+.exploreBtn span {
     position: relative;
     z-index: index 1;
 }
@@ -222,18 +219,18 @@ header {
     inset: 0;
     display: block;
 }
-.exploreBtn i::before{
-    content:"";
+.exploreBtn i::before {
+    content: "";
     position: absolute;
     top: 0;
-    left:88%;
+    left: 88%;
     width: 10px;
     height: 4px;
     transition: 0.5s;
     transform: translateY(-50%) skewX(325deg);
     background-image: url(img/buttonbackground.JPG);
 }
-.left a:hover i::before{
+.left a:hover i::before {
     width: 20px;
     left: 20%;
 }
