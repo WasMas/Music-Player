@@ -257,6 +257,7 @@ footer {
   color: rgb(207, 136, 186);
   text-decoration: none;
   cursor: default;
+  margin-left: 10px;
 }
 
 .navitem,
