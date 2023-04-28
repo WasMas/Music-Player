@@ -1,143 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact </title>
-    <link rel="stylesheet" href="contactPage.css">
-    <script src="globeanimation.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-/>
-<link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-    rel="stylesheet"
-    type="text/css"
-    href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css"
-/>
-</head>
-<body>
-    <header>
-        <img class="logo" src="img/logo3.JPG" alt="logo" />
-
-        <nav>
-            <ul class="navlinks">
-                <li><a class="navitem" href="#">Home</a></li>
-                <li><a class="navitem" href="./blog.html">Blog</a></li>
-                <li><a class="navitem" href="./services.html">Services</a></li>
-                <li><a class="navitem" href="./aboutUS.html">About</a></li>
-            </ul>
-        </nav>
-        <img
-            class="globeIco"
-            src="img/globe.JPG"
-            alt="globe-icon"
-            onclick="toggleMenu()"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="contactPage.css" />
+        <script src="globeanimation.js" defer></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+            rel="stylesheet"
         />
-        <div class="submenuWrapper" id="subMenu">
-            <div class="submenu">
-                <div><a class="submenuItem" href="#">• French</a></div>
-                <div><a class="submenuItem" href="#">• Spanish</a></div>
-                <div><a class="submenuItem" href="#">• Arabic</a></div>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css"
+        />
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo3.JPG" alt="logo" />
+
+            <nav>
+                <ul class="navlinks">
+                    <li><a class="navitem" href="#">Home</a></li>
+                    <li><a class="navitem" href="./blog.html">Blog</a></li>
+                    <li>
+                        <a class="navitem" href="./services.html">Services</a>
+                    </li>
+                    <li><a class="navitem" href="./aboutUS.html">About</a></li>
+                </ul>
+            </nav>
+            <img
+                class="globeIco"
+                src="img/globe.JPG"
+                alt="globe-icon"
+                onclick="toggleMenu()"
+            />
+            <div class="submenuWrapper" id="subMenu">
+                <div class="submenu">
+                    <div><a class="submenuItem" href="#">• French</a></div>
+                    <div><a class="submenuItem" href="#">• Spanish</a></div>
+                    <div><a class="submenuItem" href="#">• Arabic</a></div>
+                </div>
             </div>
+            <!-- sign in button -->
+            <div class="buttonContainer">
+                <a href="./form.html"
+                    ><button class="loginButton">Log in</button></a
+                >
+            </div>
+        </header>
+        <div id="bg">
+            <img src="img/image 3.png" id="bg-im" />
+            <p id="titre">contact us</p>
         </div>
-        <!-- sign in button -->
-        <div class="buttonContainer">
-            <a href="./form.html"
-                ><button class="loginButton">Log in</button></a
+        <div>
+            <form>
+                <legend>report</legend>
+                <label class="lab" for="nom">FUll NAME</label>
+                <input
+                    class="input"
+                    name="name"
+                    id="nom"
+                    class="in"
+                    type="text"
+                />
+                <label class="lab" for="email">EMAIL</label>
+                <input
+                    class="input"
+                    name="email"
+                    id="email"
+                    class="in"
+                    type="email"
+                />
+                <label class="lab" for="msg">MESSAGE</label>
+                <textarea class="input" name="message" id="msg"></textarea>
+                <input id="submit" type="submit" value="send" />
+            </form>
+        </div>
+        <div id="boxes">
+            <a
+                href="https://www.google.com/maps/place/Faculty+of+Sciences+of+Tunis+(FST)/@36.8335389,10.1449979,17z/data=!3m1!4b1!4m6!3m5!1s0x12fd33133403cc51:0xe751d5ed005a8f47!8m2!3d36.8335346!4d10.1475728!16s%2Fg%2F1226skb5"
+                target="_blank"
             >
+                <img
+                    class="img"
+                    id="im1"
+                    src="img/im1.png"
+                    title="see our location on google"
+            /></a>
+
+            <img
+                class="img"
+                id="im2"
+                src="img/im2.png"
+                onclick="copyT();"
+                title="copy number to clipboard"
+            />
+
+            <a href="mailto:MYSOUND@gmail.com">
+                <img
+                    class="img"
+                    id="im3"
+                    src="img/im3.png"
+                    title="send us an email"
+            /></a>
+            <img
+                class="img"
+                id="im4"
+                src="img/im4.png"
+                onclick="copyF();"
+                title="copy number to clipboard"
+            />
         </div>
-    </header>
-    <div id="bg">
-    <img src="img/image 3.png" id="bg-im">
-        <p id="titre">contact us</p>
-    </div>
-   <div>
-    <form >
-            <legend>report</legend>
-            <label class="lab" for="nom">FUll NAME</label>
-            <input class="input" name="name" id="nom" class="in" type="text">
-            <label class="lab" for="email">EMAIL</label>
-            <input class="input" name="email" id="email" class="in" type="email">
-            <label class="lab" for="msg">MESSAGE</label>
-            <textarea class="input" name="message" id="msg"></textarea>
-            <input id="submit" type="submit" value="send">
-    </form>
-</div>
-<div id="boxes">
-    <a href="https://www.google.com/maps/place/Faculty+of+Sciences+of+Tunis+(FST)/@36.8335389,10.1449979,17z/data=!3m1!4b1!4m6!3m5!1s0x12fd33133403cc51:0xe751d5ed005a8f47!8m2!3d36.8335346!4d10.1475728!16s%2Fg%2F1226skb5" target="_blank">
-    <img class="img" id="im1" src="img/im1.png" title="see our location on google"></a>
 
-    <img class="img" id="im2" src="img/im2.png" onclick="copyT();" title="copy number to clipboard">
+        <!--fooooterrrr-->
+        <footer>
+            <div class="footercontent">
+                <p>MySound</p>
+                <h6>
+                    Contact information: If you have any questions, comments, or
+                    suggestions, please feel free to contact us at
+                    info@musiclovers.com.
+                </h6>
+                <h6>
+                    You can also follow us on Twitter and Instagram for the
+                    latest music news and updates.
+                </h6>
+                <div class="socials">
+                    <li>
+                        <a href="#"
+                            ><i class="fa fa-facebook socialitem"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter socialitem"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google socialitem"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa fa-instagram socialitem"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa fa-linkedin-square socialitem"></i
+                        ></a>
+                    </li>
+                    <div>
+                        <li>
+                            <a class="navitemActive" href="./contactPage.html"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </div>
+                </div>
 
-    <a href="mailto:MYSOUND@gmail.com">
-    <img class="img" id="im3" src="img/im3.png" title="send us an email"></a>
-    <img class="img" id="im4" src="img/im4.png" onclick="copyF();"  title="copy number to clipboard">
-</div>
-
-<!--fooooterrrr-->
-<footer>
-    <div class="footercontent">
-        <p>MySound</p>
-        <h6>
-            Contact information: If you have any questions, comments, or
-            suggestions, please feel free to contact us at
-            info@musiclovers.com.
-        </h6>
-        <h6>
-            You can also follow us on Twitter and Instagram for the latest
-            music news and updates.
-        </h6>
-        <div class="socials">
-            <li>
-                <a href="#"><i class="fa fa-facebook socialitem"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-twitter socialitem"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-google socialitem"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-instagram socialitem"></i></a>
-            </li>
-            <li>
-                <a href="#"
-                    ><i class="fa fa-linkedin-square socialitem"></i
-                ></a>
-            </li>
-            <div>
-                <li><a class="navitemActive" href="./contactPage.html">Contact Us</a></li>
+                <div class="footerbot">
+                    <h7>Copyright © 2023 by LCS2. All rights reserved.</h7>
+                </div>
             </div>
-        </div>
-
-        <div class="footerbot">
-            <h7>Copyright © 2023 by LCS2. All rights reserved.</h7>
-        </div>
-    </div>
-</footer>
-<script>
-
-function copyT() {
-
-navigator.clipboard.writeText('(216) 52 000 415');
-alert('text copided:'+'(216) 52 000 415');
-}
-function copyF() {
-
-navigator.clipboard.writeText('(216) 71 957 115');
-alert('text copided:'+'(216) 71 957 115');
-}
-</script>
-
-
-
-
-</body>
+        </footer>
+        <script>
+            function copyT() {
+                navigator.clipboard.writeText("(216) 52 000 415");
+                alert("text copided:" + "(216) 52 000 415");
+            }
+            function copyF() {
+                navigator.clipboard.writeText("(216) 71 957 115");
+                alert("text copided:" + "(216) 71 957 115");
+            }
+        </script>
+    </body>
 </html>
