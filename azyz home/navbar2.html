@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> 
+        <meta charset="utf-8" />
+        <title>Draggable Image Slider | CodingNepal</title>
+        <link rel="stylesheet" href="navbar2.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo3.JPG" alt="logo" />
+            <nav>
+                <ul class="navlinks">
+                    <li><a class="navitem" href="#">Home</a></li>
+                    <li><a class="navitem" href="#">Blog</a></li>
+                    <li><a class="navitem" href="#">Services</a></li>
+                    <li><a class="navitem" href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="buttonContainer">
+                <a href=""><button class="loginButton">Log in</button></a>
+            </div>
+        </header>
+        <div class="page">
+         <div class="menu">
+              <h1>Playlist</h1>
+              <div class="Playlist">
+                    <h4 class="active">
+                        <span></span>
+                        <i class="bi Playlistplay bi-music-note-beamed"></i>
+                        PlayList
+                    </h4>
+                    <h4> 
+                        <span></span>
+                        <i class="bi Playlistplay bi-music-note-beamed"></i>
+                        Recommended
+                    </h4>
+             </div>
+             <div class="items">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="img/1.jpg" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="1"></i>
+                </li>
+                 <li class="songitem">
+                    <span>02</span>
+                    <img src="img/2.jpg" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="2"></i>
+                </li>
+                 <li class="songitem">
+                    <span>03</span>
+                    <img src="img/3.jpg" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="3"></i>
+                </li>
+                 <li class="songitem">
+                    <span>04</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="4"></i>
+                </li>
+                 <li class="songitem">
+                    <span>05</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="5"></i>
+                </li>
+                 <li class="songitem">
+                    <span>06</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="6"></i>
+                </li>
+                 <li class="songitem">
+                    <span>07</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="7"></i>
+                </li>
+                 <li class="songitem">
+                    <span>08</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="8"></i>
+                </li>
+                 <li class="songitem">
+                    <span>09</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="9"></i>
+                </li>
+                 <li class="songitem">
+                    <span>10</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="10"></i>
+                </li>
+                 <li class="songitem">
+                    <span>11</span>
+                    <img src="img/img3.png" alt="Alan">
+                    <h5>
+                      On My Way
+                      <div class="sbutitle">Alan Walker</div>  
+                    </h5>
+                     <i class="bi Playlistplay bi-play-circle-fill" id="11"></i>
+                </li>
+                 
+             </div>
+         </div>
+         <div class="songside">
+            <div class="slide">
+              <nav>
+                    <div class="search" >
+                     <i class="bi bi-search"></i>
+                     <input type="text" placeholder="Search Music....">
+   
+                    </div>
+                </nav>
+                <div class="affiche">
+                   
+              
+                    </div>
+                          <div class="boutons">
+                  <div class="buttonContainer">
+                <a href=""><button class="loginButton">PLAY</button></a>
+            </div>
+             <div class="buttonContainer">
+                <a href=""><button class="loginButton">FOLLOW</button></a>
+            </div>
+                </div>
+                </div>
+
+        
+     
+
+        <!-- playlists show  -->
+      <div class="song-playlist">
+         <h2 id="topartists">Top Artists</h2>
+           
+        <div class="song-playlists" id="scrollContainer">
+            <div class="list" id="scrollContent">
+              <div class="item" id="12">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+            </div>
+         </div>
+     </div>
+      <div class="song-playlist">
+         <h2 id="topartists">Top Artists</h2>
+           
+        <div class="song-playlists" id="scrollContainer">
+            <div class="list" id="scrollContent">
+              <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+                 <div class="item">
+                <img src="img/img3.png" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Melanie Martinez</h4>
+                <p>Indie pop artist with her new album Portals...</p>
+              </div>
+            </div>
+         </div>
+     </div>
+
+</div>
+         <div class="master">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                </div>
+                <img src="img/img3.png" alt="" id="poster_master_play">
+                <h5 id="title">song name
+                    <div class="sbutitle">Alan Walker</div>  
+                </h5>
+                <div class="icon">
+                    <i class="bi bi-skip-start-fill" id="back"></i>
+                    <i class="bi bi-play-fill" id="masterPlay"></i>
+                    <i class="bi bi-skip-end-fill" id="next"></i>
+
+
+
+                </div>
+                <span id="currentstart">0:00</span>
+                <div class="bar">
+                    <input type="range" id="seek"
+                    min="0" value="0" max="100">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="currentend">0:00</span>
+                <div class="vol"> 
+                    <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                     <input type="range" id="vol"
+                    min="0" value="30" max="100">
+                     <div class="volbar" id="vol_bar"></div>
+                    <div class="dot" id="vol_dot"></div>
+             
+         </div>
+        </div>
+           
+         <!--   <div class="songside">
+                <div class="affiche" id="affiche">
+                  
+                <nav>
+                    <div class="search" >
+                     <i class="bi bi-search"></i>
+                     <input type="text" placeholder="Search Music....">
+   
+                    </div>
+                </nav>
+                </div>
+             
+                <div class="songs"id="scrollContainer">
+                    <h2>Songs :</h2>
+                    <div class="items2"  id="scrollContent">
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                        </div>
+                </div>
+                <button id="scrollBtnLeft"><i class="bi bi-caret-left-fill"></i></button>
+                <button id="scrollBtnRight"><i class="bi bi-caret-right-fill"></i></button>
+                <script type="text/javascript">const container = document.getElementById("scrollContainer");
+const content = document.getElementById("scrollContent");
+
+document.getElementById("scrollBtnLeft").addEventListener("click", function() {
+  container.scrollBy({
+    left: -100,
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("scrollBtnRight").addEventListener("click", function() {
+  container.scrollBy({
+    left: 100,
+    behavior: "smooth"
+  });
+});
+
+content.addEventListener("scroll", function() {
+  if (content.scrollLeft <= 0) {
+    document.getElementById("scrollBtnLeft").disabled = true;
+  } else {
+    document.getElementById("scrollBtnLeft").disabled = false;
+  }
+  
+  if (content.scrollLeft >= content.scrollWidth - content.offsetWidth) {
+    document.getElementById("scrollBtnRight").disabled = true;
+  } else {
+    document.getElementById("scrollBtnRight").disabled = false;
+  }
+});
+</script>
+ <div class="albums"id="scrollContainer2">
+                    <h2>albums :</h2>
+                    <div class="items2"  id="scrollContent2">
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+                                <div class="card ">
+                                    <div class="photo"><img src="">
+                                    <i class="bi bi-play-circle-fill"></i></div>
+                                    <h5>Title rfgeg egtgh gtrh</h5>
+                                    <h6>singer/album</h6>
+                                </div>
+
+                        </div>
+                </div>
+                <button id="scrollBtnLeft2"><i class="bi bi-caret-left-fill"></i></button>
+                <button id="scrollBtnRight2"><i class="bi bi-caret-right-fill"></i></button>
+                <script type="text/javascript">const container2 = document.getElementById("scrollContainer2");
+const content2 = document.getElementById("scrollContent2");
+
+document.getElementById("scrollBtnLeft2").addEventListener("click", function() {
+  container2.scrollBy({
+    left: -100,
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("scrollBtnRight2").addEventListener("click", function() {
+  container2.scrollBy({
+    left: 100,
+    behavior: "smooth"
+  });
+});
+
+content2.addEventListener("scroll", function() {
+  if (content2.scrollLeft <= 0) {
+    document.getElementById("scrollBtnLeft2").disabled = true;
+  } else {
+    document.getElementById("scrollBtnLeft2").disabled = false;
+  }
+  
+  if (content2.scrollLeft >= content2.scrollWidth - content2.offsetWidth) {
+    document.getElementById("scrollBtnRight2").disabled = true;
+  } else {
+    document.getElementById("scrollBtnRight2").disabled = false;
+  }
+});
+</script>
+
+            </div>
+            <div class="master">
+                
+                </div>
+            </div>-->
+            
+</body>
+</html>
