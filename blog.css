@@ -165,8 +165,8 @@ header {
 }
 .card {
     position: relative;
-    height: 400px;
-    width: 300px;
+    height: 550px;
+    width: 430px;
     margin-right: 3rem;
     
 }
@@ -398,6 +398,10 @@ header {
     color: rgb(19, 17, 17);
     cursor: pointer;
     font-family: cursive;
+    list-style: none;
+    text-decoration: none;
+
+    
 }
 .premium:hover {
     color: #785ed4;
@@ -415,9 +419,9 @@ header {
     border-radius: 8px;
     background-image: linear-gradient(
         var(--rotate),
-        #dd9393,
-        #70b7c9 43%,
-        #b858a3
+        #c70997,
+        #139bbd 43%,
+        #eb14bc
     );
     position: absolute;
 
@@ -440,9 +444,9 @@ header {
     filter: blur(calc(var(--card-height) / 6));
     background-image: linear-gradient(
         var(--rotate),
-        #b87575,
-        rgb(203, 119, 214) 43%,
-        rgb(178, 149, 248)
+        #c70997,
+        #139bbd 43%,
+        #eb14bc
     );
     opacity: 1;
     transition: opacity 0.5s;
@@ -626,4 +630,3 @@ footer {
 .navitem:hover {
     color: rgb(207, 136, 186);
 }
-
