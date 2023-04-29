@@ -10,6 +10,43 @@ body {
     overflow: hidden;
 }
 
+.globeIco {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.submenuWrapper.open-menu {
+    max-height: 400px;
+}
+
+.submenu {
+    border-radius: 5px;
+    padding: 6px 5px 3px;
+    background: #2b2c2e;
+}
+
+.submenuItem {
+    text-decoration: none;
+    color: rgb(212, 219, 219);
+    text-decoration: dotted;
+}
+
+.submenuWrapper {
+    position: absolute;
+    max-height: 0px;
+    top: 110%;
+    right: 12%;
+    width: 90px;
+    overflow: hidden;
+    transition: max-height 1.5s;
+}
+
+.submenuItem:hover {
+    transition: 0.3s;
+    color: #a07699;
+}
+
 #bgSignIN-UP {
     background-image: url("img/idk.png");
     height: 100vh;
