@@ -97,7 +97,7 @@ header {
     padding: 0px 20px;
 }
 
-.navlinks li a {
+.navlinks li .navitem {
     transition: all 0.3s ease 0s;
 }
 
