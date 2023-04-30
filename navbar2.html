@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> 
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+        />
         <meta charset="utf-8" />
         <title>Draggable Image Slider | CodingNepal</title>
         <link rel="stylesheet" href="navbar2.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.25" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -14,556 +17,412 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="img/logo3.JPG" alt="logo" />
+            <a class="logo" href="./index.html"
+                ><img src="img/logo3.JPG" alt="logo"
+            /></a>
             <nav>
                 <ul class="navlinks">
-                    <li><a class="navitem" href="#">Home</a></li>
-                    <li><a class="navitem" href="#">Blog</a></li>
-                    <li><a class="navitem" href="#">Services</a></li>
-                    <li><a class="navitem" href="#">About</a></li>
+                    <li><a class="navitem" href="./navbar2.html">Home</a></li>
+                    <li><a class="navitemActive">Blog</a></li>
+                    <li><a class="navitem" href="./services.html">Services</a></li>
+                    <li><a class="navitem" href="./aboutUS.html">About</a></li>
                 </ul>
             </nav>
+            <img
+                class="globeIco"
+                src="img/globe.JPG"
+                alt="globe-icon"
+                onclick="toggleMenu()"
+            />
+            <div class="submenuWrapper" id="subMenu">
+                <div class="submenu">
+                    <div><a class="submenuItem" href="#">• French</a></div>
+                    <div><a class="submenuItem" href="#">• Spanish</a></div>
+                    <div><a class="submenuItem" href="#">• Arabic</a></div>
+                </div>
+            </div>
+            <!-- sign in button -->
             <div class="buttonContainer">
-                <a href=""><button class="loginButton">Log in</button></a>
+                <a href="./form.html"
+                    ><button class="loginButton">Log in</button></a
+                >
             </div>
         </header>
-        
         <div class="page">
-         <div class="menu">
-              <h1>Playlist</h1>
-              <div class="Playlist">
+            <div class="menu">
+                <h1>Playlist</h1>
+                <div class="Playlist">
                     <h4 class="active">
                         <span></span>
                         <i class="bi Playlistplay bi-music-note-beamed"></i>
                         PlayList
                     </h4>
-                    <h4> 
+                    <h4>
                         <span></span>
                         <i class="bi Playlistplay bi-music-note-beamed"></i>
                         Recommended
                     </h4>
-             </div>
-             <div class="items">
-              
-                <li class="songitem">
-                  <span>01</span>
-                  <img src="img/img2.png" alt="">
-                  <h5>
+                </div>
+                <div class="items">
+                    <li class="songitem">
+                        <span>01</span>
+                        <img src="img/img2.png" alt="" />
+                        <h5>
+                            DEATH
+                            <div class="sbutitle">Melanie</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="1"
+                        ></i>
+                    </li>
+
+                    <li class="songitem">
+                        <span>02</span>
+                        <img src="img/alan.jpg" alt="" />
+                        <h5>
+                            Faded
+                            <div class="sbutitle">Alan</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="2"
+                        ></i>
+                    </li>
+
+                    <li class="songitem">
+                        <span>03</span>
+                        <img src="img/taylor.jpg" alt="" />
+                        <h5>
+                            Anti-Hero
+                            <div class="sbutitle">Taylor</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="3"
+                        ></i>
+                    </li>
+
+                    <li class="songitem">
+                        <span>04</span>
+                        <img src="img/sza.jpg" alt="" />
+                        <h5>
+                            Kill Bill
+                            <div class="sbutitle">SZA</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="4"
+                        ></i>
+                    </li>
+                    <li class="songitem">
+                        <span>05</span>
+                        <img src="img/tnbh.jpg" alt="" />
+                        <h5>
+                            Compass
+                            <div class="sbutitle">TNBH</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="5"
+                        ></i>
+                    </li>
+                    <li class="songitem">
+                        <span>06</span>
+                        <img src="img/3.jpg" alt="" />
+                        <h5>
+                            Cupid
+                            <div class="sbutitle">Fifty Fifty</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="6"
+                        ></i>
+                    </li>
+
+                    <li class="songitem">
+                        <span>07</span>
+                        <img src="img/img3.jpg" alt="" />
+                        <h5>
+                            Pistol
+                            <div class="sbutitle">Cig After S</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="7"
+                        ></i>
+                    </li>
+
+                    <li class="songitem">
+                        <span>08</span>
+                        <img src="img/img2.png" alt="" />
+                        <h5>
+                            TUNNEL VISION
+                            <div class="sbutitle">Melanie Martinez</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="8"
+                        ></i>
+                    </li>
+                    <li class="songitem">
+                        <span>09</span>
+                        <img src="img/taylor.jpg" alt="" />
+                        <h5>
+                            You're On Your Own Kid
+                            <div class="sbutitle">Taylor Swift</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="9"
+                        ></i>
+                    </li>
+                    <li class="songitem">
+                        <span>10</span>
+                        <img src="img/tnbh.jpg" alt="" />
+                        <h5>
+                            Softcore
+                            <div class="sbutitle">TNBH</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="10"
+                        ></i>
+                    </li>
+                    <li class="songitem">
+                        <span>11</span>
+                        <img src="img/calpurnia.jpg" alt="" />
+                        <h5>
+                            Waves
+                            <div class="sbutitle">Calpurnia</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="11"
+                        ></i>
+                    </li>
+                    <li class="songitem">
+                        <span>12</span>
+                        <img src="img/img2.png" alt="" />
+                        <h5>
+                            VOID
+                            <div class="sbutitle">Melanie Martinez</div>
+                        </h5>
+                        <i
+                            class="bi Playlistplay bi-play-circle-fill"
+                            id="12"
+                        ></i>
+                    </li>
+                </div>
+            </div>
+            <div class="songside">
+                <div class="slide">
+                    <nav>
+                        <div class="search">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="Search Music...." />
+                        </div>
+                    </nav>
+                    <div class="affiche"></div>
+                    <div class="boutons">
+                        <div class="buttonContainer">
+                            <a href=""
+                                ><button class="loginButton">PLAY</button></a
+                            >
+                        </div>
+                        <div class="buttonContainer">
+                            <a href=""
+                                ><button class="loginButton">FOLLOW</button></a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- playlists show  -->
+                <div class="song-playlist">
+                    <h2 id="topartists">Best Of Artists</h2>
+
+                    <div class="song-playlists" id="scrollContainer">
+                        <div class="list" id="scrollContent">
+                            <div class="item" id="12">
+                                <img src="img/thisismelanie.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Melanie Martinez</h4>
+                                <p>Indie pop artist...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisisalan.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Alan Walker</h4>
+                                <p>Norwegian music producer and DJ...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisisimagine.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Imagine Dragons</h4>
+                                <p>American pop rock band based in...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisistaylor.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Taylor Swift</h4>
+                                <p>American singer-songwriter...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisislana.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Lana Del Rey</h4>
+                                <p>Elizabeth Woolridge Grant, known profe...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisissza.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is SZA</h4>
+                                <p>Solána Imani Rowe, known professio...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisisharry.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Harry Styles</h4>
+                                <p>Harry Edward Styles is an English sin...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/thisisweeknd.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is The Weeknd</h4>
+                                <p>Abel Makkonen Tesfaye, known profes...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/nessabarret.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Melanie Martinez</h4>
+                                <p>Indie pop artist...</p>
+                            </div>
+                            <div class="item" id="12">
+                                <img src="img/martingarrix.jpeg" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>This Is Melanie Martinez</h4>
+                                <p>Indie pop artist...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-playlist">
+                    <h2 id="topartists">Daily Mixes</h2>
+
+                    <div class="song-playlists" id="scrollContainer">
+                        <div class="list" id="scrollContent">
+                            <div class="item">
+                                <img src="img/mix1.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 1</h4>
+                                <p>MIX 1, SZA, Melanie, Alan...</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/mix2.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 2</h4>
+                                <p>MIX 2, FIFTY FIFTY, Cupid, Alan...</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/mix3.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 3</h4>
+                                <p>MIX 3, SIA, SNOWMAN, WEEKND...</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/mix4.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 4</h4>
+                                <p>MIX 4, ALAN WALKER, FADED, SZA...</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/mix5.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 5</h4>
+                                <p>MIX 5, MELANIE MARTINEZ, PORTALS, IVE...</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/mix6.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 6</h4>
+                                <p>MIX 6, TAME IMPALA, CURRENT, IVE...</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/mix7.JPG" />
+                                <div class="play">
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <h4>MIX 7</h4>
+                                <p>MIX 7, PISTOL, CIG AFTER S, IVE...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="master">
+                <div class="wave" id="wave">
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                </div>
+                <img src="img/img2.png" alt="" id="poster_master_play" />
+                <h5 id="title">
                     DEATH
-                    <div class="sbutitle">Melanie</div>  
-                  </h5>
-                   <i class="bi Playlistplay bi-play-circle-fill" id="1"></i>
-              </li>
-
-              <li class="songitem">
-                <span>02</span>
-                <img src="img/alan.jpg" alt="">
-                <h5>
-                  Faded
-                  <div class="sbutitle">Alan</div>  
-                </h5>
-                 <i class="bi Playlistplay bi-play-circle-fill" id="2"></i>
-            </li>
-
-            <li class="songitem">
-              <span>03</span>
-              <img src="img/taylor.jpg" alt="">
-              <h5>
-                Anti-Hero
-                <div class="sbutitle">Taylor</div>  
-              </h5>
-               <i class="bi Playlistplay bi-play-circle-fill" id="3"></i>
-          </li>
-
-          <li class="songitem">
-            <span>04</span>
-            <img src="img/sza.jpg" alt="">
-            <h5>
-              Kill Bill
-              <div class="sbutitle">SZA</div>  
-            </h5>
-             <i class="bi Playlistplay bi-play-circle-fill" id="4"></i>
-        </li>
-        <li class="songitem">
-          <span>05</span>
-          <img src="img/tnbh.jpg" alt="">
-          <h5>
-            Compass
-            <div class="sbutitle">TNBH</div>  
-          </h5>
-           <i class="bi Playlistplay bi-play-circle-fill" id="5"></i>
-      </li>
-      <li class="songitem">
-        <span>06</span>
-        <img src="img/3.jpg" alt="">
-        <h5>
-          Cupid
-          <div class="sbutitle">Fifty Fifty</div>  
-        </h5>
-         <i class="bi Playlistplay bi-play-circle-fill" id="6"></i>
-    </li>
-
-    <li class="songitem">
-      <span>07</span>
-      <img src="img/img3.jpg" alt="">
-      <h5>
-        Pistol
-        <div class="sbutitle">Cig After S</div>  
-      </h5>
-       <i class="bi Playlistplay bi-play-circle-fill" id="7"></i>
-  </li>
-
-  <li class="songitem">
-    <span>08</span>
-    <img src="img/img2.png" alt="">
-    <h5>
-      TUNNEL VISION
-      <div class="sbutitle">Melanie Martinez</div>  
-    </h5>
-     <i class="bi Playlistplay bi-play-circle-fill" id="8"></i>
-</li>
-<li class="songitem">
-  <span>09</span>
-  <img src="img/taylor.jpg" alt="">
-  <h5>
-    You're On Your Own Kid
-    <div class="sbutitle">Taylor Swift</div>  
-  </h5>
-   <i class="bi Playlistplay bi-play-circle-fill" id="9"></i>
-</li>
-<li class="songitem">
-  <span>10</span>
-  <img src="img/tnbh.jpg" alt="">
-  <h5>
-    Softcore
-    <div class="sbutitle">TNBH</div>  
-  </h5>
-   <i class="bi Playlistplay bi-play-circle-fill" id="10"></i>
-</li>
-<li class="songitem">
-  <span>11</span>
-  <img src="img/calpurnia.jpg" alt="">
-  <h5>
-    Waves
-    <div class="sbutitle">Calpurnia</div>  
-  </h5>
-   <i class="bi Playlistplay bi-play-circle-fill" id="11"></i>
-</li>
-<li class="songitem">
-  <span>12</span>
-  <img src="img/img2.png" alt="">
-  <h5>
-    VOID
-    <div class="sbutitle">Melanie Martinez</div>  
-  </h5>
-   <i class="bi Playlistplay bi-play-circle-fill" id="12"></i>
-</li>
-
-
-             </div>
-         </div>
-         <div class="songside">
-            <div class="slide">
-              <nav>
-                    <div class="search" >
-                     <i class="bi bi-search"></i>
-                     <input type="text" placeholder="Search Music....">
-   
-                    </div>
-                </nav>
-                <div class="affiche">
-                   
-              
-                    </div>
-                          <div class="boutons">
-                  <div class="buttonContainer">
-                <a href=""><button class="loginButton">PLAY</button></a>
-            </div>
-             <div class="buttonContainer">
-                <a href=""><button class="loginButton">FOLLOW</button></a>
-            </div>
-                </div>
-                </div>
-
-        
-     
-
-        <!-- playlists show  -->
-      <div class="song-playlist">
-         <h2 id="topartists">Best Of Artists</h2>
-           
-        <div class="song-playlists" id="scrollContainer">
-            <div class="list" id="scrollContent">
-              <div class="item" id="12">
-                <img src="img/thisismelanie.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is Melanie Martinez</h4>
-                <p>Indie pop artist...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisisalan.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is Alan Walker</h4>
-                <p>Norwegian music producer and DJ...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisisimagine.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is Imagine Dragons</h4>
-                <p>American pop rock band based in...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisistaylor.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is Taylor Swift</h4>
-                <p>American singer-songwriter...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisislana.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is Lana Del Rey</h4>
-                <p>Elizabeth Woolridge Grant, known profe...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisissza.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is SZA</h4>
-                <p>Solána Imani Rowe, known professio...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisisharry.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is Harry Styles</h4>
-                <p>Harry Edward Styles is an English sin...</p>
-              </div>
-              <div class="item" id="12">
-                <img src="img/thisisweeknd.jpg" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>This Is The Weeknd</h4>
-                <p>Abel Makkonen Tesfaye, known profes...</p>
-              </div>
- 
-            </div>
-         </div>
-     </div>
-      <div class="song-playlist">
-         <h2 id="topartists">Daily Mixes</h2>
-           
-        <div class="song-playlists" id="scrollContainer">
-            <div class="list" id="scrollContent">
-              <div class="item">
-                <img src="img/mix1.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 1</h4>
-                <p>MIX 1, SZA, Melanie, Alan...</p>
-              </div>
-              <div class="item">
-                <img src="img/mix2.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 2</h4>
-                <p>MIX 2, FIFTY FIFTY, Cupid, Alan...</p>
-              </div>
-              <div class="item">
-                <img src="img/mix3.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 3</h4>
-                <p>MIX 3, SIA, SNOWMAN, WEEKND...</p>
-              </div>
-              <div class="item">
-                <img src="img/mix4.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 4</h4>
-                <p>MIX 4, ALAN WALKER, FADED, SZA...</p>
-              </div>
-              <div class="item">
-                <img src="img/mix5.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 5</h4>
-                <p>MIX 5, MELANIE MARTINEZ, PORTALS, IVE...</p>
-              </div>
-              <div class="item">
-                <img src="img/mix6.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 6</h4>
-                <p>MIX 6, TAME IMPALA, CURRENT, IVE...</p>
-              </div>
-              <div class="item">
-                <img src="img/mix7.JPG" />
-                <div class="play">
-                  <span class="fa fa-play"></span>
-                </div>
-                <h4>MIX 7</h4>
-                <p>MIX 7, PISTOL, CIG AFTER S, IVE...</p>
-              </div>
-                 
-            </div>
-         </div>
-     </div>
-
-</div>
-
-
-         <div class="master">
-            <div class="wave" id="wave">
-                <div class="wave1"></div>
-                <div class="wave1"></div>
-                <div class="wave1"></div>
-                </div>
-                <img src="img/img2.png" alt="" id="poster_master_play">
-                <h5 id="title">DEATH
-                    <div class="sbutitle">Melanie Martinez</div>  
+                    <div class="sbutitle">Melanie Martinez</div>
                 </h5>
                 <div class="icon">
                     <i class="bi bi-skip-start-fill" id="back"></i>
                     <i class="bi bi-play-fill" id="masterPlay"></i>
                     <i class="bi bi-skip-end-fill" id="next"></i>
-
-
-
                 </div>
                 <span id="currentstart">0:00</span>
                 <div class="bar">
-                    <input type="range" id="seek"
-                    min="0" value="0" max="100">
+                    <input type="range" id="seek" min="0" value="0" max="100" />
                     <div class="bar2" id="bar2"></div>
                     <div class="dot"></div>
                 </div>
                 <span id="currentend">0:00</span>
-                <div class="vol"> 
+                <div class="vol">
                     <i class="bi bi-volume-up-fill" id="vol_icon"></i>
-                     <input type="range" id="vol"
-                    min="0" value="30" max="100">
-                     <div class="volbar" id="vol_bar"></div>
+                    <input type="range" id="vol" min="0" value="30" max="100" />
+                    <div class="volbar" id="vol_bar"></div>
                     <div class="dot" id="vol_dot"></div>
-             
-         </div>
-        </div>
-           
-         <!--   <div class="songside">
-                <div class="affiche" id="affiche">
-                  
-                <nav>
-                    <div class="search" >
-                     <i class="bi bi-search"></i>
-                     <input type="text" placeholder="Search Music....">
-   
-                    </div>
-                </nav>
                 </div>
-             
-                <div class="songs"id="scrollContainer">
-                    <h2>Songs :</h2>
-                    <div class="items2"  id="scrollContent">
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                        </div>
-                </div>
-                <button id="scrollBtnLeft"><i class="bi bi-caret-left-fill"></i></button>
-                <button id="scrollBtnRight"><i class="bi bi-caret-right-fill"></i></button>
-                <script type="text/javascript">const container = document.getElementById("scrollContainer");
-const content = document.getElementById("scrollContent");
-
-document.getElementById("scrollBtnLeft").addEventListener("click", function() {
-  container.scrollBy({
-    left: -100,
-    behavior: "smooth"
-  });
-});
-
-document.getElementById("scrollBtnRight").addEventListener("click", function() {
-  container.scrollBy({
-    left: 100,
-    behavior: "smooth"
-  });
-});
-
-content.addEventListener("scroll", function() {
-  if (content.scrollLeft <= 0) {
-    document.getElementById("scrollBtnLeft").disabled = true;
-  } else {
-    document.getElementById("scrollBtnLeft").disabled = false;
-  }
-  
-  if (content.scrollLeft >= content.scrollWidth - content.offsetWidth) {
-    document.getElementById("scrollBtnRight").disabled = true;
-  } else {
-    document.getElementById("scrollBtnRight").disabled = false;
-  }
-});
-</script>
- <div class="albums"id="scrollContainer2">
-                    <h2>albums :</h2>
-                    <div class="items2"  id="scrollContent2">
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-                                <div class="card ">
-                                    <div class="photo"><img src="">
-                                    <i class="bi bi-play-circle-fill"></i></div>
-                                    <h5>Title rfgeg egtgh gtrh</h5>
-                                    <h6>singer/album</h6>
-                                </div>
-
-                        </div>
-                </div>
-                <button id="scrollBtnLeft2"><i class="bi bi-caret-left-fill"></i></button>
-                <button id="scrollBtnRight2"><i class="bi bi-caret-right-fill"></i></button>
-                <script type="text/javascript">const container2 = document.getElementById("scrollContainer2");
-const content2 = document.getElementById("scrollContent2");
-
-document.getElementById("scrollBtnLeft2").addEventListener("click", function() {
-  container2.scrollBy({
-    left: -100,
-    behavior: "smooth"
-  });
-});
-
-document.getElementById("scrollBtnRight2").addEventListener("click", function() {
-  container2.scrollBy({
-    left: 100,
-    behavior: "smooth"
-  });
-});
-
-content2.addEventListener("scroll", function() {
-  if (content2.scrollLeft <= 0) {
-    document.getElementById("scrollBtnLeft2").disabled = true;
-  } else {
-    document.getElementById("scrollBtnLeft2").disabled = false;
-  }
-  
-  if (content2.scrollLeft >= content2.scrollWidth - content2.offsetWidth) {
-    document.getElementById("scrollBtnRight2").disabled = true;
-  } else {
-    document.getElementById("scrollBtnRight2").disabled = false;
-  }
-});
-</script>
-
             </div>
-            <div class="master">
-                
-                </div>
-            </div>-->
-            
-</body>
+        </div>
+    </body>
 </html>
