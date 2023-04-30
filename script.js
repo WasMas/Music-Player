@@ -249,3 +249,27 @@ next.addEventListener('click',()=> {
     el.target.classList.add('bi-pause-circle-fill');
     wave.classList.add('active2');
 });
+
+
+var bgImageArray = ["./img/aff/aff1.jpg", "./img/aff/aff2.jpg", "./img/aff/aff3.jpg", "./img/aff/aff4.jpg"];
+secs = 4;
+
+const slide =document.querySelector("#idgf");
+slide.classList.add("slide");
+
+bgImageArray.forEach(function(img){
+  new Image().src = img; 
+});
+
+
+function backgroundSequence() {
+	window.clearTimeout();
+	var k = 0;
+	for (i = 0; i < bgImageArray.length; i++) {
+		setTimeout(function(){ 
+			slide.style.background = "url("+bgImageArray[k]+")";
+		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+		}, (secs * 1000) * i)	
+	}
+}
+backgroundSequence();

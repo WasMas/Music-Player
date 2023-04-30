@@ -511,14 +511,15 @@ margin: 0px 0px 0px 20px;
   
 
 }
-
-.songside .slide{
-  width: 100%;
-  height: 40%;
+#idgf{
+  background-repeat: no-repeat;
+}
+.slide{
+  width: 1465px;
+  height: 344px;
  /* border: 1px solid black;*/
- background-image: url(img/aff/aff2.jpg);
- background-size: cover;
  transition:background-image 1s ease-in-out;
+ 
 }
 .songside nav{
   /*border: 1px solid; #fff;*/
