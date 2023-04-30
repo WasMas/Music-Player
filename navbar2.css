@@ -252,7 +252,7 @@ color: #b675ab;
   }
 .page .menu .items{
   width: 100%;
-  height: 69%;
+  height: 78%;
   /*border: 1px solid white;*/
   margin-top: 25px;
   overflow-y: scroll;
@@ -271,7 +271,8 @@ color: #b675ab;
 .songitem{
   background:#2b2c2c;
   opacity: 90%;
-  height: 53px;
+  height: 70px;
+  color: white;
 }
 .page .menu .items li:hover{
   transition:3s ease;
@@ -292,11 +293,11 @@ height:32px ;
 margin-left: 25px;
 }
  .page .menu .items li h5{
-font-size: 11px;
+font-size: 17px;
 margin-left: 15px;
 }
  .page .menu .items li h5 .subtitle{
-font-size: 9px;
+font-size: 15px;
 color: #020202;
 }
  .page .menu .items li .bi{
@@ -371,7 +372,7 @@ font-size: 16px;
   height: 50px;
 }
  .master h5{
-  font-size: 11px;
+  font-size: 14px;
   margin-left: 15px;
   color: #ffffff;
   }
@@ -605,8 +606,8 @@ margin: 0px 0px 0px 20px;
    
   }
  .song-playlist .song-playlists .list .item {
-    min-width: 140px;
-    width: 160px;
+    min-width: 200px;
+    width: 220px;
     padding: 15px;
     background-color: #2b2a2a;
     border-radius: 6px;

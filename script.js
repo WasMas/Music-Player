@@ -1,5 +1,4 @@
 const music = new Audio('audio/1.mp3');
-//music.play();
 const songs = [
   {
     id: 1,
@@ -146,7 +145,6 @@ let dot= document.getElementsByClassName('dot')[0];
 music.addEventListener('timeupdate',()=> {
   let music_curr = music.currentTime;
   let music_dur = music.duration;
-  //console.log(music_dur);
   let min1 = Math.floor(music_dur/60);
   let sec1 = Math.floor(music_dur%60);
   if (sec1<10) {
