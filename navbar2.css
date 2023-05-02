@@ -72,7 +72,7 @@ header {
   width: 100%;
   background-color: #2b2c2e;
   height: 43px;
-  z-index: 99999;
+  z-index: 999999999999999;
   position: fixed;
 }
 
@@ -307,8 +307,9 @@ color: #020202;
  .page .menu .items li .bi{
 position: absolute;
 right: 15px;
-top: 6px;
-font-size: 16px;
+top: 20px;
+font-size: 25px;
+
 }
 .page .menu .items::-webkit-scrollbar{
   display: none;
